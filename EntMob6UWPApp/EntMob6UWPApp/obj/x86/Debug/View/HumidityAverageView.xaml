@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="EntMob6UWPApp.View.HumidityAverageView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EntMob6UWPApp.View"
+    xmlns:converters="using:EntMob6UWPApp.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding Source={StaticResource mainViewModelLocator},Path=HumidityAverageViewModel}">
+
+    <UserControl.Resources>
+        <converters:DateConverter x:Key="localDateConverter"></converters:DateConverter>
+        <converters:DoubleConverter x:Key="localDoubleConverter"></converters:DoubleConverter>
+    </UserControl.Resources>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        <SplitView DisplayMode="Inline" IsPaneOpen="True">
+            <SplitView.Pane>
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton x:ConnectionId='1' Content="Hour" Tag="Hour"                              ></RadioButton>
+                    <RadioButton x:ConnectionId='2' Content="Day" Tag="Day"                              ></RadioButton>
+                    <RadioButton x:ConnectionId='3' Content="Week" Tag="Week"                              ></RadioButton>
+                    <RadioButton x:ConnectionId='4' Content="Month" Tag="Month"                              ></RadioButton>
+                </StackPanel>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <ListView ItemsSource="{Binding HumidityAverages, Mode=OneWay}" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border BorderBrush="Black" BorderThickness="1">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"></RowDefinition>
+                                     </Grid.RowDefinitions>
+
+                                    <StackPanel Orientation="Horizontal" Margin="11">
+                                        <Border BorderBrush="Black" BorderThickness="1">
+                                            <TextBlock Text="{Binding AvgPercent, Converter={StaticResource localDoubleConverter}}" Grid.Column="1"></TextBlock>
+                            </Border>
+                                        <TextBlock Text="{Binding Date, Converter={StaticResource localDateConverter}}" Grid.Column="2"></TextBlock>
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </SplitView.Content>
+        </SplitView>
+    </Grid>
+</Page>
+
