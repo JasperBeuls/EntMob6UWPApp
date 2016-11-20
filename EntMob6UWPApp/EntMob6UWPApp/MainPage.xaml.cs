@@ -26,8 +26,6 @@ namespace EntMob6UWPApp
         public MainPage()
         {
             this.InitializeComponent();
-            OverviewPage.Navigate(typeof (OverviewView));
-            HistoryPage.Navigate(typeof (HistoryView));
         }
     }
 }

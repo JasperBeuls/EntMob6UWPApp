@@ -54,8 +54,8 @@ namespace EntMob6UWPApp.ViewModels
 
         public void LoadData()
         {
-            //TODO humidities = humidityDataService.GetAllHumidities().ToObservableCollection();
-            humidities = humidityDataService.GetDataHumidities().ToObservableCollection();
+            humidities = humidityDataService.GetAllHumidities().ToObservableCollection();
+            //TODO humidities = humidityDataService.GetDataHumidities().ToObservableCollection();
             latestHumidity = humidities.LastOrDefault();
         }
     }

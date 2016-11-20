@@ -13,7 +13,8 @@ namespace EntMob6UWPApp.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
         private User loggedInUser;
         private IFrameNavigation frameNavigation;
-        public ICommand ValueCommand { get; set; }
+        public ICommand OverviewCommand { get; set; }
+        public ICommand HistoryCommand { get; set; }
         private void RaisePropertyChanged(string propertyName)
         {
             if (PropertyChanged != null)
@@ -37,16 +38,20 @@ namespace EntMob6UWPApp.ViewModels
             this.frameNavigation = frameNavigation;
             Messenger.Default.Register<User>(this, OnUserReceived);
             LoadCommands();
-            //frameNavigation.NavigateToFrame(typeof(OverviewView));
-            //HistoryPage.Navigate(typeof(HistoryView));
         }
 
         private void LoadCommands()
         {
-            ValueCommand = new CustomCommand(ShowPivot, CanShowValues);
+            OverviewCommand = new CustomCommand(ShowOverview, CanShowValues);
+            HistoryCommand = new CustomCommand(ShowHistoryView, CanShowValues);
         }
 
-        private void ShowPivot(object obj)
+        private void ShowHistoryView(object obj)
+        {
+            frameNavigation.NavigateToFrame(typeof(HistoryView));
+        }
+
+        private void ShowOverview(object obj)
         {
             frameNavigation.NavigateToFrame(typeof(OverviewView));
         }

@@ -16,3 +16,21 @@ F:\Data\Documents\Visual Studio 2015\Projects\EntMob6UWPApp\EntMob6UWP.Domain\ob
 F:\Data\Documents\Visual Studio 2015\Projects\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWP.Domain\bin\x86\Debug\EntMob6UWP.Domain.dll.config
 f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\EntMob6UWP.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\bin\x86\Debug\EntMob6UWP.Domain.dll.config
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\bin\x86\Debug\EntMob6UWP.Domain.dll
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\bin\x86\Debug\EntMob6UWP.Domain.pdb
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\bin\x86\Debug\EntMob6UWP.Domain.pri
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\EntMob6UWP.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\EntMob6UWP.Domain.dll
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\EntMob6UWP.Domain.pdb
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\priconfig.xml
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\priconfig.xml.intermediate
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\layout.resfiles
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\layout.resfiles.intermediate
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\resources.resfiles
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\resources.resfiles.intermediate
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\pri.resfiles
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\pri.resfiles.intermediate
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\qualifiers.txt
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\qualifiers.txt.intermediate
+C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt

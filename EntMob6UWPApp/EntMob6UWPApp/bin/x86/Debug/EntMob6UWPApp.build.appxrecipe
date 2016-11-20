@@ -10,20 +10,23 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>27b54d91-0348-429c-ab51-0e6af030d77c</PackageIdentityName>
     <PackageIdentityPublisher>CN=Jasper Beuls</PackageIdentityPublisher>
-    <IntermediateOutputPath>f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\EntMob6UWPApp.exe">
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\EntMob6UWPApp.exe">
       <PackagePath>entrypoint\EntMob6UWPApp.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\.nuget\packages\Expression.Blend.Sdk\1.0.2\lib\netcore451\Windows.UI.Interactivity.dll">
+      <PackagePath>Windows.UI.Interactivity.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jasper Beuls\.nuget\packages\Microsoft.AspNetCore.Hosting.Abstractions\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Abstractions.dll">
       <PackagePath>Microsoft.AspNetCore.Hosting.Abstractions.dll</PackagePath>
@@ -442,56 +445,56 @@
     <AppxPackagedFile Include="C:\Users\Jasper Beuls\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWP.DAL\bin\x86\Debug\EntMob6UWP.DAL.dll">
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.DAL\bin\x86\Debug\EntMob6UWP.DAL.dll">
       <PackagePath>EntMob6UWP.DAL.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWP.Domain\bin\x86\Debug\EntMob6UWP.Domain.dll">
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\bin\x86\Debug\EntMob6UWP.Domain.dll">
       <PackagePath>EntMob6UWP.Domain.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\ApplicationInsights.config">
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\EntMob6UWPApp.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\EntMob6UWPApp.xr.xml">
       <PackagePath>EntMob6UWPApp.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\Core\EntMob6UWPApp.exe">
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\Core\EntMob6UWPApp.exe">
       <PackagePath>EntMob6UWPApp.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

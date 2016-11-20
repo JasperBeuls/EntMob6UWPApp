@@ -17,7 +17,7 @@ namespace EntMob6UWPApp.ViewModels
         }
         public HistoryViewModel(IFrameNavigation frameNavigation)
         {
-            frameNavigation.NavigateToFrame(typeof(MainPage));
+           // frameNavigation.NavigateToFrame(typeof(MainPage));
         }
     }
 }

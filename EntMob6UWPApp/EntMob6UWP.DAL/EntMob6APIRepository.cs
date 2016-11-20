@@ -1,16 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using EntMob6UWP.Domain;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace EntMob6UWP.DAL
 {
     public class EntMob6APIRepository : IEntMob6Repository
     {
+        public string val(String userName, String userPassword)
+        {
+            string authInfo = userName + ":" + userPassword;
+            authInfo = Convert.ToBase64String(Encoding.UTF8.GetBytes(authInfo));
+            return authInfo;
+        }
         private static List<Humidity> humidities;
         private List<HumidityAverage> humidityAverages;
         const string API_BASE_URL = "http://localhost:8080";
@@ -27,15 +35,29 @@ namespace EntMob6UWP.DAL
 
         public List<Humidity> GetAllHumidities()
         {
-         //   throw new Exception("hh");
-            string endpoint = API_BASE_URL+"/humidity"; // api url ingeven
-            var uri = new Uri(String.Format("{0}?format=json", endpoint));
-            var client = new HttpClient();
-            var response = Task.Run(() => client.GetAsync(uri)).Result;
-            response.EnsureSuccessStatusCode();
-            var result = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
-            var root = JsonConvert.DeserializeObject<RootObject<Humidity>>(result);
-            return root.ResultsList;
+          
+        
+            using (var client = new HttpClient())
+            {
+            
+                string endpoint = API_BASE_URL + "/humidity"; // api url ingeven
+                client.BaseAddress = new Uri(endpoint);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", val("boyen", "root")));
+                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+                var response = Task.Run(()=> client.GetAsync(endpoint)).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                 var   str = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
+                    
+                    var root = JsonConvert.DeserializeObject<List<Humidity>>(str);
+                    return root;
+                }
+       
+
+            }
+            return null;
+
         }
 
         public HumidityAverage GetHumidityAverageById(string Id)
@@ -51,8 +73,8 @@ namespace EntMob6UWP.DAL
             var response = Task.Run(() => client.GetAsync(uri)).Result;
             response.EnsureSuccessStatusCode();
             var result = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
-            var root = JsonConvert.DeserializeObject<RootObject<HumidityAverage>>(result);
-            return root.ResultsList;
+         //  var root = JsonConvert.DeserializeObject<RootObject<HumidityAverage>>(result);
+            return null;
         }
         
         public static DateTime ConvertUnixTimeStamp(long unixTimeStamp)
@@ -119,9 +141,18 @@ namespace EntMob6UWP.DAL
             };
             return humidityAverages;
         } 
-        class RootObject<T>
+        //class RootObject<T>
+        //{
+        //    public List<T> ResultsList;
+        //}
+        public class RootObject
         {
-            public List<T> ResultsList;
+            public string id { get; set; }
+            public double percentage { get; set; }
+            //[JsonProperty(PropertyName = "measured")]
+            //[JsonConverter(typeof(MilisecondEpochConverter))]
+            //public DateTime measured { get; set; }
         }
+      
     }
 }

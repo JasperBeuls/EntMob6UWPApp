@@ -9,8 +9,9 @@
     DataContext="{Binding Source={StaticResource mainViewModelLocator},Path=MainpageViewModel}">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button Name="OverviewPageButton" Margin="10,10,0,651" Height="59" Width="176" Content="Overview" Command="{Binding OverviewCommand}"></Button>
-        <Button Name="HistoryPageButton" Margin="191,10,0,651" Height="59" Width="176" Content="History" Command="{Binding HistoryCommand}"></Button>
+        <Button x:ConnectionId='1' Name="OverviewPageButton" Margin="10,10,0,651" Height="59" Width="176" Content="Overview" Command="{Binding OverviewCommand}"></Button>
+        <Button x:ConnectionId='2' Name="HistoryPageButton" Margin="191,10,0,651" Height="59" Width="176" Content="History" Command="{Binding HistoryCommand}"></Button>
         
     </Grid>
 </Page>
+
