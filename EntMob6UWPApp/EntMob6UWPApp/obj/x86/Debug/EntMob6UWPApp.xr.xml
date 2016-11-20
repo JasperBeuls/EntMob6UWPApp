@@ -4,11 +4,14 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="MainpageViewModel" />
+    <RootPropertyPathName Name="HistoryViewModel" />
     <RootPropertyPathName Name="HumidityAverageViewModel" />
     <RootPropertyPathName Name="HumidityAverages" />
     <RootPropertyPathName Name="Date" />
     <RootPropertyPathName Name="AvgPercent" />
     <RootPropertyPathName Name="LoginViewModel" />
+    <RootPropertyPathName Name="LoginCommand" />
     <RootPropertyPathName Name="OverviewViewModel" />
     <RootPropertyPathName Name="LatestHumidity" />
     <RootPropertyPathName Name="Percentage" />
@@ -22,10 +25,17 @@
     <RootType FullName="Windows.UI.Xaml.ResourceDictionary" />
     <RootType FullName="EntMob6UWPApp.ViewModelLocator" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
-      <RootProperty Name="Content" />
       <RootProperty Name="DataContext" />
+      <RootProperty Name="Content" />
       <RootProperty Name="Resources" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="Converter" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
@@ -46,13 +56,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Frame" />
     <RootType FullName="EntMob6UWPApp.MainPage" />
     <RootType FullName="EntMob6UWPApp.View.HistoryView" />
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Source" />
-      <RootProperty Name="Path" />
-      <RootProperty Name="Mode" />
-      <RootProperty Name="Converter" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="EntMob6UWPApp.Converters.DateConverter" />
     <RootType FullName="EntMob6UWPApp.Converters.DoubleConverter" />
     <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
@@ -103,6 +106,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
+      <RootProperty Name="Command" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox" />
     <RootType FullName="EntMob6UWPApp.View.LoginView" />

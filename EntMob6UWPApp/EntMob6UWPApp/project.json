@@ -1,5 +1,6 @@
 ﻿{
   "dependencies": {
+    "Expression.Blend.Sdk": "1.0.2",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
     "Newtonsoft.Json": "9.0.2-beta1"
   },

@@ -105,12 +105,14 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\DialogService.cs" />
+    <Compile Include="Services\FrameNavigationService.cs" />
     <Compile Include="Services\HumidityAverageDataService.cs" />
     <Compile Include="Services\HumidityDataService.cs" />
+    <Compile Include="Services\IFrameNavigation.cs" />
     <Compile Include="Utility\CustomCommand.cs" />
     <Compile Include="Utility\Messenger.cs" />
     <Compile Include="ViewModelLocator.cs" />
+    <Compile Include="ViewModels\HistoryViewModel.cs" />
     <Compile Include="ViewModels\HumidityAverageViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\MainpageViewModel.cs" />

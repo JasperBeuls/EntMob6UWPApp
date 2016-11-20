@@ -12,6 +12,7 @@ namespace EntMob6UWPApp.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
         private HumidityDataService humidityDataService;
         private ObservableCollection<Humidity> humidities;
+        private IFrameNavigation frameNavigation;
         private void RaisePropertyChanged(string propertyName)
         {
             if (PropertyChanged != null)
@@ -43,8 +44,9 @@ namespace EntMob6UWPApp.ViewModels
                 RaisePropertyChanged("LatestHumidity");
             }
         }
-        public OverviewViewModel()
+        public OverviewViewModel(IFrameNavigation frameNavigation)
         {
+            this.frameNavigation = frameNavigation;
             humidityDataService = new HumidityDataService();
                 
             LoadData();

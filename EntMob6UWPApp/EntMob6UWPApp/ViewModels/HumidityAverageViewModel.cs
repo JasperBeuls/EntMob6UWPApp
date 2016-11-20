@@ -10,7 +10,8 @@ namespace EntMob6UWPApp.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
         private HumidityAverageDataService humidityAverageDataService;
-        private ObservableCollection<HumidityAverage> humidityAverages; 
+        private ObservableCollection<HumidityAverage> humidityAverages;
+        private IFrameNavigation frameNavigation;
         private void RaisePropertyChanged(string propertyName)
         {
             if (PropertyChanged != null)
@@ -30,8 +31,9 @@ namespace EntMob6UWPApp.ViewModels
             }
         }
 
-        public HumidityAverageViewModel()
+        public HumidityAverageViewModel(IFrameNavigation frameNavigation)
         {
+            this.frameNavigation = frameNavigation;
             humidityAverageDataService = new HumidityAverageDataService();
             humidityAverages = humidityAverageDataService.GetAllHumidityAveragesTest().ToObservableCollection();
 

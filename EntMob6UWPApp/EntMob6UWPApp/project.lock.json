@@ -3,6 +3,14 @@
   "version": 1,
   "targets": {
     "UAP,Version=v10.0": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "compile": {
+          "lib/netcore451/Windows.UI.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Windows.UI.Interactivity.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Hosting.Abstractions/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Server.Abstractions": "1.0.0",
@@ -2448,6 +2456,14 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "compile": {
+          "lib/netcore451/Windows.UI.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Windows.UI.Interactivity.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Hosting.Abstractions/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Server.Abstractions": "1.0.0",
@@ -4962,6 +4978,14 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "compile": {
+          "lib/netcore451/Windows.UI.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Windows.UI.Interactivity.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Hosting.Abstractions/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Server.Abstractions": "1.0.0",
@@ -7515,6 +7539,14 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "compile": {
+          "lib/netcore451/Windows.UI.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Windows.UI.Interactivity.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Hosting.Abstractions/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Server.Abstractions": "1.0.0",
@@ -10038,6 +10070,14 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "compile": {
+          "lib/netcore451/Windows.UI.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Windows.UI.Interactivity.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Hosting.Abstractions/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Server.Abstractions": "1.0.0",
@@ -12600,6 +12640,14 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "compile": {
+          "lib/netcore451/Windows.UI.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Windows.UI.Interactivity.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Hosting.Abstractions/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Server.Abstractions": "1.0.0",
@@ -15123,6 +15171,14 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "compile": {
+          "lib/netcore451/Windows.UI.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Windows.UI.Interactivity.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Hosting.Abstractions/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Server.Abstractions": "1.0.0",
@@ -17686,6 +17742,26 @@
     }
   },
   "libraries": {
+    "Expression.Blend.Sdk/1.0.2": {
+      "sha512": "2rOHxr7HsJ4gVc75JymaFDS80VvhT/1rpm50LHUKRmsykE1cdM4n2rmcntcTSG08/S1ZedLuSWQpb3yBY3xfUQ==",
+      "type": "package",
+      "files": [
+        "Expression.Blend.Sdk.1.0.2.nupkg.sha512",
+        "Expression.Blend.Sdk.nuspec",
+        "lib/net40-client/System.Windows.Interactivity.dll",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "lib/netcore45/Windows.UI.Interactivity.dll",
+        "lib/netcore45/Windows.UI.Interactivity.pri",
+        "lib/netcore45/Windows.UI.Interactivity.xml",
+        "lib/netcore451/Windows.UI.Interactivity.dll",
+        "lib/netcore451/Windows.UI.Interactivity.pri",
+        "lib/netcore451/Windows.UI.Interactivity.xml",
+        "lib/sl4-wp71/System.Windows.Interactivity.dll",
+        "lib/sl40/System.Windows.Interactivity.dll",
+        "lib/sl50/System.Windows.Interactivity.dll",
+        "lib/wp8/System.Windows.Interactivity.dll"
+      ]
+    },
     "Microsoft.AspNetCore.Hosting.Abstractions/1.0.0": {
       "sha512": "8r6qOl1jYyC523ZKM1QNl+6ijIoYWELWm0tpEWqtTIOg9DytHJWshB7usgqiuRmfHXM0EUziR6ouFY7iP7Tuzw==",
       "type": "package",
@@ -24023,6 +24099,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "Expression.Blend.Sdk >= 1.0.2",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
       "Newtonsoft.Json >= 9.0.2-beta1"
     ],

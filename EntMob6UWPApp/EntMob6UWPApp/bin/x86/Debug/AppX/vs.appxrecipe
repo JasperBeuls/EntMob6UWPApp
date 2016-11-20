@@ -28,13 +28,17 @@
     <AppXManifest Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-11T13:54:55.207</Modified>
+      <Modified>2016-11-20T12:58:41.273</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\EntMob6UWPApp.exe">
       <PackagePath>entrypoint\EntMob6UWPApp.exe</PackagePath>
-      <Modified>2016-11-11T13:54:54.384</Modified>
+      <Modified>2016-11-20T12:58:40.137</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jasper Beuls\.nuget\packages\Expression.Blend.Sdk\1.0.2\lib\netcore451\Windows.UI.Interactivity.dll">
+      <PackagePath>Windows.UI.Interactivity.dll</PackagePath>
+      <Modified>2013-12-06T18:13:30.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jasper Beuls\.nuget\packages\Microsoft.AspNetCore.Hosting.Abstractions\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Abstractions.dll">
       <PackagePath>Microsoft.AspNetCore.Hosting.Abstractions.dll</PackagePath>
@@ -594,7 +598,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWP.DAL\bin\x86\Debug\EntMob6UWP.DAL.dll">
       <PackagePath>EntMob6UWP.DAL.dll</PackagePath>
-      <Modified>2016-11-11T12:44:17.223</Modified>
+      <Modified>2016-11-20T12:57:53.200</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWP.Domain\bin\x86\Debug\EntMob6UWP.Domain.dll">
       <PackagePath>EntMob6UWP.Domain.dll</PackagePath>
@@ -644,7 +648,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\EntMob6UWPApp.xr.xml">
       <PackagePath>EntMob6UWPApp.xr.xml</PackagePath>
-      <Modified>2016-11-11T13:53:57.636</Modified>
+      <Modified>2016-11-11T17:13:35.123</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -653,11 +657,11 @@
     <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-11T13:53:59.266</Modified>
+      <Modified>2016-11-20T12:50:11.388</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="f:\data\documents\visual studio 2015\Projects\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\Core\EntMob6UWPApp.exe">
       <PackagePath>EntMob6UWPApp.exe</PackagePath>
-      <Modified>2016-11-11T13:54:55.204</Modified>
+      <Modified>2016-11-20T12:58:41.264</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
