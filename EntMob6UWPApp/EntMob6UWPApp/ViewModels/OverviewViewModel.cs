@@ -1,9 +1,12 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Windows.Input;
 using EntMob6UWP.Domain;
 using EntMob6UWPApp.Extensions;
 using EntMob6UWPApp.Services;
+using EntMob6UWPApp.Utility;
+using EntMob6UWPApp.View;
 
 namespace EntMob6UWPApp.ViewModels
 {
@@ -12,16 +15,15 @@ namespace EntMob6UWPApp.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
         private HumidityDataService humidityDataService;
         private ObservableCollection<Humidity> humidities;
+        private Account loggedInUser;
         private IFrameNavigation frameNavigation;
+        public ICommand OverviewCommand { get; set; }
+        public ICommand HistoryCommand { get; set; }
         private void RaisePropertyChanged(string propertyName)
         {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        
 
         public ObservableCollection<Humidity> Humidities
         {
@@ -47,16 +49,53 @@ namespace EntMob6UWPApp.ViewModels
         public OverviewViewModel(IFrameNavigation frameNavigation)
         {
             this.frameNavigation = frameNavigation;
+            Messenger.Default.Register<Account>(this, OnUserReceived);
             humidityDataService = new HumidityDataService();
-                
-            LoadData();
+            LoadCommands();    
         }
 
         public void LoadData()
         {
             humidities = humidityDataService.GetAllHumidities().ToObservableCollection();
-            //TODO humidities = humidityDataService.GetDataHumidities().ToObservableCollection();
+            //humidities = humidityDataService.GetDataHumidities().ToObservableCollection();
             latestHumidity = humidities.LastOrDefault();
+        }
+        private void LoadCommands()
+        {
+            OverviewCommand = new CustomCommand(ShowOverview, CanShowValues);
+            HistoryCommand = new CustomCommand(ShowHistoryView, CanShowValues);
+        }
+        private void ShowHistoryView(object obj)
+        {
+            frameNavigation.NavigateToFrame(typeof(HumidityAverageView));
+        }
+
+        private void ShowOverview(object obj)
+        {
+            frameNavigation.NavigateToFrame(typeof(OverviewView));
+        }
+
+        private bool CanShowValues(object obj)
+        {
+            return true;
+        }
+
+        private void OnUserReceived(Account user)
+        {
+
+            LoggedInUser = user;
+
+            LoadData();
+        }
+        public Account LoggedInUser
+        {
+            get { return loggedInUser; }
+            set
+            {
+                loggedInUser = value;
+                RaisePropertyChanged("LoggedInUser");
+
+            }
         }
     }
 }

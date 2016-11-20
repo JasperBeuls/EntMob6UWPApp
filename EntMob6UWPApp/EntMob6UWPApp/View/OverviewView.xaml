@@ -17,8 +17,8 @@
                         <VisualState.StateTriggers>
                             <AdaptiveTrigger MinWindowWidth="0" />
                         </VisualState.StateTriggers>
-                        <VisualState.Setters>
-                            <Setter Target="St2.(RelativePanel.Below)" Value="St1"/>
+                    <VisualState.Setters>
+                        <Setter Target="St2.(RelativePanel.Below)" Value="St1"/>
                         <Setter Target="St3.(RelativePanel.Below)" Value="St2"/>
                         <Setter Target="St4.(RelativePanel.Below)" Value="St3"/>
                     </VisualState.Setters>
@@ -27,8 +27,8 @@
                         <VisualState.StateTriggers>
                             <AdaptiveTrigger MinWindowWidth="720" />
                         </VisualState.StateTriggers>
-                        <VisualState.Setters>
-                            <Setter Target="St2.(RelativePanel.RightOf)" Value="St3"/>
+                    <VisualState.Setters>
+                        <Setter Target="St2.(RelativePanel.RightOf)" Value="St3"/>
                         <Setter Target="St3.(RelativePanel.Below)" Value="St1"/>
                         <Setter Target="St4.(RelativePanel.RightOf)" Value="St3"/>
                         <Setter Target="St4.(RelativePanel.Below)" Value="St2"/>
@@ -36,17 +36,22 @@
                     </VisualState>
                 </VisualStateGroup>
             </VisualStateManager.VisualStateGroups>
-            <Viewbox Stretch="Uniform">
+        
+        <Viewbox Stretch="Uniform">
                 
           
-            <RelativePanel>
-                <StackPanel Name="St1">
+            <RelativePanel >
+                <StackPanel Name="ButtonStackPanel" Orientation="Horizontal" >
+                    <Button Name="OverviewPageButton" Content="Overview"  Margin="8"></Button>
+                    <Button Name="HistoryPageButton"  Content="History"  Margin="8" Command="{Binding HistoryCommand}"></Button>
+                </StackPanel>
+                <StackPanel Name="St1" RelativePanel.Below="ButtonStackPanel">
                     
                     <TextBlock Text="Humidity:" Margin="8"></TextBlock>
                     <TextBlock Text="{Binding LatestHumidity.Percentage, Mode=OneWay}" Margin="8"></TextBlock>
                 </StackPanel>
 
-                <StackPanel Name="St2">
+                <StackPanel Name="St2" RelativePanel.Below="ButtonStackPanel">
                     <TextBlock Text="Temperature:" Margin="8"></TextBlock>
                     <TextBlock Text="{Binding LatestHumidity.Percentage}" Margin="8"></TextBlock>
                 </StackPanel>
@@ -59,7 +64,7 @@
                     <TextBlock Text="Air pressure:" Margin="8"></TextBlock>
                     <TextBlock Text="{Binding LatestHumidity.Percentage}" Margin="8"></TextBlock>
                 </StackPanel>
-
+              
             </RelativePanel>
         </Viewbox>
     </Grid>

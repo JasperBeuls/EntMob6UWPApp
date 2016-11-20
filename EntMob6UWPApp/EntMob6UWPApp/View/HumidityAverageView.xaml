@@ -14,41 +14,58 @@
         <converters:DoubleConverter x:Key="localDoubleConverter"></converters:DoubleConverter>
     </UserControl.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        
-        <SplitView DisplayMode="Inline" IsPaneOpen="True">
-            <SplitView.Pane>
-                <StackPanel Orientation="Horizontal">
-                    <RadioButton Content="Hour" Tag="Hour" Checked="RadioButton_Checked"></RadioButton>
-                    <RadioButton Content="Day" Tag="Day" Checked="RadioButton_Checked"></RadioButton>
-                    <RadioButton Content="Week" Tag="Week" Checked="RadioButton_Checked"></RadioButton>
-                    <RadioButton Content="Month" Tag="Month" Checked="RadioButton_Checked"></RadioButton>
-                </StackPanel>
-            </SplitView.Pane>
-            <SplitView.Content>
-                <ListView ItemsSource="{Binding HumidityAverages, Mode=OneWay}" >
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <Border BorderBrush="Black" BorderThickness="1">
-                                <Grid>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*"></ColumnDefinition>
-                                    </Grid.ColumnDefinitions>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="*"></RowDefinition>
-                                     </Grid.RowDefinitions>
+        <Viewbox Stretch="Uniform">
 
-                                    <StackPanel Orientation="Horizontal" Margin="11">
-                                        <Border BorderBrush="Black" BorderThickness="1">
-                                            <TextBlock Text="{Binding AvgPercent, Converter={StaticResource localDoubleConverter}}" Grid.Column="1"></TextBlock>
-                            </Border>
-                                        <TextBlock Text="{Binding Date, Converter={StaticResource localDateConverter}}" Grid.Column="2"></TextBlock>
-                                    </StackPanel>
-                                </Grid>
-                            </Border>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </SplitView.Content>
-        </SplitView>
+
+            <RelativePanel >
+                <StackPanel Name="ButtonStackPanel" Orientation="Horizontal" RelativePanel.AlignTopWithPanel="True" >
+                    <Button Name="OverviewPageButton" Content="Overview"  Margin="8"></Button>
+                    <Button Name="HistoryPageButton"  Content="Humidity"  Margin="8" Command="{Binding HistoryCommand}"></Button>
+                </StackPanel>
+                
+
+
+
+                    <Grid RelativePanel.Below="ButtonStackPanel">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel  Orientation="Vertical"  Grid.Column="0"  >
+                        <RadioButton Content="Minute" Tag="Minute" Command="{Binding LoginCommand}"></RadioButton>
+                            <RadioButton Content="Hour" Tag="Hour" Checked="RadioButton_Checked"></RadioButton>
+                            <RadioButton Content="Day" Tag="Day" Checked="RadioButton_Checked"></RadioButton>
+                            <RadioButton Content="Month" Tag="Month" Checked="RadioButton_Checked"></RadioButton>
+                        </StackPanel>
+                        <ListView ItemsSource="{Binding HumidityAverages, Mode=OneWay}" Grid.Column="1">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Border BorderBrush="Black" BorderThickness="1">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"></RowDefinition>
+                                            </Grid.RowDefinitions>
+
+                                            <StackPanel Orientation="Horizontal" Margin="11">
+                                                <Border BorderBrush="Black" BorderThickness="1">
+                                                    <TextBlock Text="{Binding AvgPercent, Converter={StaticResource localDoubleConverter}}" Grid.Column="1"></TextBlock>
+                                                </Border>
+                                                <TextBlock Text="{Binding Date, Converter={StaticResource localDateConverter}}" Grid.Column="2"></TextBlock>
+                                            </StackPanel>
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+
+                    </Grid>
+                          
+                
+         
+            </RelativePanel></Viewbox>
+            
     </Grid>
 </Page>

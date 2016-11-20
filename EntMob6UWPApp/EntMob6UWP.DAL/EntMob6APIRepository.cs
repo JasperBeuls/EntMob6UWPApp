@@ -13,6 +13,7 @@ namespace EntMob6UWP.DAL
 {
     public class EntMob6APIRepository : IEntMob6Repository
     {
+        private static Account LoggedInUser;
         public string val(String userName, String userPassword)
         {
             string authInfo = userName + ":" + userPassword;
@@ -43,7 +44,7 @@ namespace EntMob6UWP.DAL
                 string endpoint = API_BASE_URL + "/humidity"; // api url ingeven
                 client.BaseAddress = new Uri(endpoint);
                 client.DefaultRequestHeaders.Accept.Clear();
-                client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", val("boyen", "root")));
+                client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", val(LoggedInUser.Username, LoggedInUser.Password)));
                 client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
                 var response = Task.Run(()=> client.GetAsync(endpoint)).Result;
                 if (response.IsSuccessStatusCode)
@@ -65,17 +66,7 @@ namespace EntMob6UWP.DAL
             return null;
         }
 
-        public List<HumidityAverage> GetAllHumidityAverages()
-        {
-            string api = ""; // api url ingeven
-            var uri = new Uri(String.Format("{0}?format=json", api));
-            var client = new HttpClient();
-            var response = Task.Run(() => client.GetAsync(uri)).Result;
-            response.EnsureSuccessStatusCode();
-            var result = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
-         //  var root = JsonConvert.DeserializeObject<RootObject<HumidityAverage>>(result);
-            return null;
-        }
+        
         
         public static DateTime ConvertUnixTimeStamp(long unixTimeStamp)
         {
@@ -110,6 +101,102 @@ namespace EntMob6UWP.DAL
             return humidities;
         }
 
+        public List<HumidityAverage> GetAllHumidityAveragesMinute()
+        {
+            using (var client = new HttpClient())
+            {
+
+                string endpoint = API_BASE_URL + "/humidity/minute"; // api url ingeven
+                client.BaseAddress = new Uri(endpoint);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", val(LoggedInUser.Username, LoggedInUser.Password)));
+                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+                var response = Task.Run(() => client.GetAsync(endpoint)).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    var str = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
+
+                    var root = JsonConvert.DeserializeObject<List<HumidityAverage>>(str);
+                    return root;
+                }
+
+
+            }
+            return null;
+        }
+
+        public List<HumidityAverage> GetAllHumidityAveragesHour()
+        {
+            using (var client = new HttpClient())
+            {
+
+                string endpoint = API_BASE_URL + "/humidity/hour"; // api url ingeven
+                client.BaseAddress = new Uri(endpoint);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", val(LoggedInUser.Username, LoggedInUser.Password)));
+                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+                var response = Task.Run(() => client.GetAsync(endpoint)).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    var str = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
+
+                    var root = JsonConvert.DeserializeObject<List<HumidityAverage>>(str);
+                    return root;
+                }
+
+
+            }
+            return null;
+        }
+
+        public List<HumidityAverage> GetAllHumidityAveragesDay()
+        {
+            using (var client = new HttpClient())
+            {
+
+                string endpoint = API_BASE_URL + "/humidity/day"; // api url ingeven
+                client.BaseAddress = new Uri(endpoint);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", val(LoggedInUser.Username, LoggedInUser.Password)));
+                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+                var response = Task.Run(() => client.GetAsync(endpoint)).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    var str = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
+
+                    var root = JsonConvert.DeserializeObject<List<HumidityAverage>>(str);
+                    return root;
+                }
+
+
+            }
+            return null;
+        }
+
+        public List<HumidityAverage> GetAllHumidityAveragesMonth()
+        {
+            using (var client = new HttpClient())
+            {
+
+                string endpoint = API_BASE_URL + "/humidity/month"; // api url ingeven
+                client.BaseAddress = new Uri(endpoint);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", val(LoggedInUser.Username, LoggedInUser.Password)));
+                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+                var response = Task.Run(() => client.GetAsync(endpoint)).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    var str = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
+
+                    var root = JsonConvert.DeserializeObject<List<HumidityAverage>>(str);
+                    return root;
+                }
+
+
+            }
+            return null;
+        }
+
         public List<HumidityAverage> LoadHumidityAverages()
         {
             humidityAverages = new List<HumidityAverage>()
@@ -140,7 +227,32 @@ namespace EntMob6UWP.DAL
                 }
             };
             return humidityAverages;
-        } 
+        }
+
+        public Account GetAccount(string username, string password)
+        {
+            //return new Account() {Enabled = true,Password = "Beuls",Username = "Jasper",Roles = new List<string>()};
+            using (var client = new HttpClient())
+            {
+
+                string endpoint = API_BASE_URL + "/login?username=" + username + "&password="+password; // api url ingeven
+                client.BaseAddress = new Uri(endpoint);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+                var response = Task.Run(() => client.GetAsync(endpoint)).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    var str = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
+
+                    var root = JsonConvert.DeserializeObject<Account>(str);
+                    LoggedInUser = root;
+                    return root;
+                }
+
+
+            }
+            return null;
+        }
         //class RootObject<T>
         //{
         //    public List<T> ResultsList;

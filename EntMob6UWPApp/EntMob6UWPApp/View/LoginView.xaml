@@ -15,13 +15,13 @@
                 <StackPanel Orientation="Horizontal" >
 
                     <StackPanel>
-                        <TextBlock Text="Username" MinHeight="35"></TextBlock>
-                        <TextBlock Text="Password" MinHeight="30"></TextBlock>
+                        <TextBlock Name="usernameTextBlock" Text="Username" MinHeight="35"></TextBlock>
+                        <TextBlock Name="passwordTextBlock" Text="Password" MinHeight="30"></TextBlock>
                         
                     </StackPanel>
                     <StackPanel>
-                    <TextBox></TextBox>
-                    <TextBox></TextBox>
+                        <TextBox Text="{Binding Path=Username,UpdateSourceTrigger=Default, Mode=TwoWay}"></TextBox>
+                        <TextBox Text="{Binding Path=Password,UpdateSourceTrigger=Default, Mode=TwoWay}"></TextBox>
                 </StackPanel>
                 </StackPanel>
                 

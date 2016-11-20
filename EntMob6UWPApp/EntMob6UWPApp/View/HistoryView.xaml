@@ -9,19 +9,6 @@
      DataContext="{Binding Source={StaticResource mainViewModelLocator},Path=HistoryViewModel}">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Pivot x:Name="HistoryPivot">
-            <PivotItem Header="Temperature">
-                <Frame x:Name="TemperaturePage"></Frame>
-            </PivotItem>
-            <PivotItem Header="Humidity">
-                <Frame x:Name="HumidityPage"></Frame>
-            </PivotItem>
-            <PivotItem Header="Air pressure">
-                <Frame x:Name="AirPressurePage"></Frame>
-            </PivotItem>
-            <PivotItem Header="Light intensity">
-                <Frame x:Name="LightIntensityPage"></Frame>
-            </PivotItem>
-        </Pivot>
+        
     </Grid>
 </Page>

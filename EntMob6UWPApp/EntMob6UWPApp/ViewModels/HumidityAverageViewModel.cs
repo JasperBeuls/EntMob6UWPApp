@@ -14,10 +14,7 @@ namespace EntMob6UWPApp.ViewModels
         private IFrameNavigation frameNavigation;
         private void RaisePropertyChanged(string propertyName)
         {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
         public ObservableCollection<HumidityAverage> HumidityAverages

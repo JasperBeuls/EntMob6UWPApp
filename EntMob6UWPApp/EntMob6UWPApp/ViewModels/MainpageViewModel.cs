@@ -11,18 +11,15 @@ namespace EntMob6UWPApp.ViewModels
     public class MainpageViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        private User loggedInUser;
+        private Account loggedInUser;
         private IFrameNavigation frameNavigation;
         public ICommand OverviewCommand { get; set; }
         public ICommand HistoryCommand { get; set; }
         private void RaisePropertyChanged(string propertyName)
         {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-        public User LoggedInUser
+        public Account LoggedInUser
         {
             get { return loggedInUser; }
             set
@@ -36,7 +33,7 @@ namespace EntMob6UWPApp.ViewModels
         public MainpageViewModel(IFrameNavigation frameNavigation)
         {
             this.frameNavigation = frameNavigation;
-            Messenger.Default.Register<User>(this, OnUserReceived);
+            Messenger.Default.Register<Account>(this, OnUserReceived);
             LoadCommands();
         }
 
@@ -61,7 +58,7 @@ namespace EntMob6UWPApp.ViewModels
             return true;
         }
 
-        private void OnUserReceived(User user)
+        private void OnUserReceived(Account user)
         {
             LoggedInUser = user;
         }

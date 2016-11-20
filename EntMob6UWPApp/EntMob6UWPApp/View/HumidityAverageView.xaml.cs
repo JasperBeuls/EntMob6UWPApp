@@ -35,7 +35,7 @@ namespace EntMob6UWPApp.View
                 string timespan = rb.Tag.ToString();
                 switch (timespan)
                 {
-                    
+                   
                 }
             }
         }

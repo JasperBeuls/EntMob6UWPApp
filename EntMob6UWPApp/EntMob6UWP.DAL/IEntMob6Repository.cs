@@ -8,7 +8,11 @@ namespace EntMob6UWP.DAL
         Humidity GetHumidityById(string Id);
         List<Humidity> GetAllHumidities();
         List<Humidity> LoadHumidities();
-        List<HumidityAverage> GetAllHumidityAverages();
+        List<HumidityAverage> GetAllHumidityAveragesMinute();
+        List<HumidityAverage> GetAllHumidityAveragesHour();
+        List<HumidityAverage> GetAllHumidityAveragesDay();
+        List<HumidityAverage> GetAllHumidityAveragesMonth();
         List<HumidityAverage> LoadHumidityAverages();
+        Account GetAccount(string username, string password);
     }
 }

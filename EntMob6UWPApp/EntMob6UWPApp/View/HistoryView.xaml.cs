@@ -26,11 +26,6 @@ namespace EntMob6UWPApp.View
     {
         public HistoryView()
         {
-            this.InitializeComponent();
-            //TemperaturePage.Navigate(typeof(HistoryView));
-            HumidityPage.Navigate(typeof(HumidityAverageView));
-            //AirPressurePage.Navigate(typeof(HistoryView));
-            //LightIntensityPage.Navigate(typeof(HistoryView));
         }
     }
 }
