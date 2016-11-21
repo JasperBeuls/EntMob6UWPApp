@@ -18,9 +18,9 @@
 
 
             <RelativePanel >
-                <StackPanel Name="ButtonStackPanel" Orientation="Horizontal" RelativePanel.AlignTopWithPanel="True" >
-                    <Button Name="OverviewPageButton" Content="Overview"  Margin="8" Command="{Binding OverviewCommand}"></Button>
-                    <Button Name="HistoryPageButton"  Content="Humidity"  Margin="8" ></Button>
+                <StackPanel x:ConnectionId='1' Name="ButtonStackPanel" Orientation="Horizontal" RelativePanel.AlignTopWithPanel="True" >
+                    <Button x:ConnectionId='6' Name="OverviewPageButton" Content="Overview"  Margin="8" Command="{Binding OverviewCommand}"></Button>
+                    <Button x:ConnectionId='7' Name="HistoryPageButton"  Content="Humidity"  Margin="8" ></Button>
                 </StackPanel>
                 
 
@@ -32,10 +32,10 @@
                             <ColumnDefinition Width="*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel  Orientation="Vertical"  Grid.Column="0"  >
-                        <Button Name="Minute"  Content="Minute"  Margin="8" Command="{Binding MinuteCommand}" MinWidth="75"></Button>
-                        <Button Name="Hour"  Content="Hour"  Margin="8" Command="{Binding HourCommand}" MinWidth="75"></Button>
-                        <Button Name="Day"  Content="Day"  Margin="8" Command="{Binding DayCommand}" MinWidth="75"></Button>
-                        <Button Name="Month"  Content="Month"  Margin="8" Command="{Binding MonthCommand}" MinWidth="75"></Button>
+                        <Button x:ConnectionId='2' Name="Minute"  Content="Minute"  Margin="8" Command="{Binding MinuteCommand}" MinWidth="75"></Button>
+                        <Button x:ConnectionId='3' Name="Hour"  Content="Hour"  Margin="8" Command="{Binding HourCommand}" MinWidth="75"></Button>
+                        <Button x:ConnectionId='4' Name="Day"  Content="Day"  Margin="8" Command="{Binding DayCommand}" MinWidth="75"></Button>
+                        <Button x:ConnectionId='5' Name="Month"  Content="Month"  Margin="8" Command="{Binding MonthCommand}" MinWidth="75"></Button>
                     </StackPanel>
                         <ListView ItemsSource="{Binding HumidityAverages, Mode=OneWay}" Grid.Column="1">
                             <ListView.ItemTemplate>
@@ -70,3 +70,4 @@
             
     </Grid>
 </Page>
+

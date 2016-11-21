@@ -9,19 +9,19 @@ namespace EntMob6UWPApp.Services
         IEntMob6Repository repository = new EntMob6APIRepository();
         public List<HumidityAverage> GetAllHumidityAveragesMinute()
         {
-            return repository.GetAllHumidityAverages();
+            return repository.GetAllHumidityAveragesMinute();
         }
         public List<HumidityAverage> GetAllHumidityAveragesHour()
         {
-            return repository.GetAllHumidityAverages();
+            return repository.GetAllHumidityAveragesHour();
         }
         public List<HumidityAverage> GetAllHumidityAveragesDay()
         {
-            return repository.GetAllHumidityAverages();
+            return repository.GetAllHumidityAveragesDay();
         }
         public List<HumidityAverage> GetAllHumidityAveragesMonth()
         {
-            return repository.GetAllHumidityAverages();
+            return repository.GetAllHumidityAveragesMonth();
         }
         public List<HumidityAverage> GetAllHumidityAveragesTest()
         {

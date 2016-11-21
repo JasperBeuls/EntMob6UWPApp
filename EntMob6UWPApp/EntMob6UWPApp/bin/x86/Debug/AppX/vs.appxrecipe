@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-20T18:53:01.754</Modified>
+      <Modified>2016-11-21T15:05:08.900</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\EntMob6UWPApp.exe">
       <PackagePath>entrypoint\EntMob6UWPApp.exe</PackagePath>
-      <Modified>2016-11-20T18:53:00.185</Modified>
+      <Modified>2016-11-21T15:05:07.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jasper Beuls\.nuget\packages\Expression.Blend.Sdk\1.0.2\lib\netcore451\Windows.UI.Interactivity.dll">
       <PackagePath>Windows.UI.Interactivity.dll</PackagePath>
@@ -598,11 +598,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.DAL\bin\x86\Debug\EntMob6UWP.DAL.dll">
       <PackagePath>EntMob6UWP.DAL.dll</PackagePath>
-      <Modified>2016-11-20T18:12:07.079</Modified>
+      <Modified>2016-11-21T14:55:59.314</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\bin\x86\Debug\EntMob6UWP.Domain.dll">
       <PackagePath>EntMob6UWP.Domain.dll</PackagePath>
-      <Modified>2016-11-20T16:49:40.295</Modified>
+      <Modified>2016-11-21T14:55:58.633</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
@@ -648,7 +648,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\EntMob6UWPApp.xr.xml">
       <PackagePath>EntMob6UWPApp.xr.xml</PackagePath>
-      <Modified>2016-11-20T18:50:40.288</Modified>
+      <Modified>2016-11-21T15:05:07.227</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -657,11 +657,11 @@
     <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-20T18:53:01.517</Modified>
+      <Modified>2016-11-21T15:05:08.648</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\bin\x86\Debug\Core\EntMob6UWPApp.exe">
       <PackagePath>EntMob6UWPApp.exe</PackagePath>
-      <Modified>2016-11-20T18:53:01.750</Modified>
+      <Modified>2016-11-21T15:05:08.895</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
