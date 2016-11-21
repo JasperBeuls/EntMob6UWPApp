@@ -1,8 +1,0 @@
-﻿<Application
-    x:Class="EnMob6UWP.Test.App"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:EnMob6UWP.Test"
-    RequestedTheme="Light">
-
-</Application>

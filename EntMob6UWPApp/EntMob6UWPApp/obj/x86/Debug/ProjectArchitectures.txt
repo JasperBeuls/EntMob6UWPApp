@@ -1,4 +1,0 @@
-C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.DAL\EntMob6UWP.DAL.csproj;x86
-C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\EntMob6UWP.Domain.csproj;x86
-C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\EntMob6UWP.Domain.csproj;x86
-C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWPApp.csproj;x86
