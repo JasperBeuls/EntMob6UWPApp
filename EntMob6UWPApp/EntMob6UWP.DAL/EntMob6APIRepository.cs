@@ -203,25 +203,25 @@ namespace EntMob6UWP.DAL
             {
                 new HumidityAverage()
                 {
-                    AvgPercent = 75.0999984741211,
+                    AvPer = 75.0999984741211,
                     Date = ConvertUnixTimeStamp(1478020500000),
                     ID = "5818cdf2b3b9493f15b76a6f"
                 },
                 new HumidityAverage()
                 {
-                    AvgPercent = 73.0999984741211,
+                    AvPer = 73.0999984741211,
                     Date = ConvertUnixTimeStamp(1478020620000),
                     ID = "5818ce5eb3b9493f15b76a70"
                 },
                 new HumidityAverage()
                 {
-                    AvgPercent = 76.0999984741211,
+                    AvPer = 76.0999984741211,
                     Date = ConvertUnixTimeStamp(1478020980000),
                     ID = "5818d2aab3b9493f15b76a74"
                 },
                 new HumidityAverage()
                 {
-                    AvgPercent = 74.0999984741211,
+                    AvPer = 74.0999984741211,
                     Date = ConvertUnixTimeStamp(1478021760000),
                     ID = "5818d31ab3b9493f15b76a75"
                 }
