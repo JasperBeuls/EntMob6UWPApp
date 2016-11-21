@@ -3,7 +3,7 @@ using EntMob6UWP.Domain;
 
 namespace EntMob6UWPApp.Services
 {
-    public class AccountDataService
+    public class AccountDataService : IAccountDataService
     {
         IEntMob6Repository repository = new EntMob6APIRepository();
 

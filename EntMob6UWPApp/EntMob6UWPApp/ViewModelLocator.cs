@@ -8,7 +8,7 @@ namespace EntMob6UWPApp
     public class ViewModelLocator
     {
         private static IFrameNavigation frameNavigation = new FrameNavigationService();
-        private static  OverviewViewModel overviewViewModel = new OverviewViewModel(frameNavigation);
+        private static  OverviewViewModel overviewViewModel = new OverviewViewModel(frameNavigation,DataServiceLocator.HumidityDataService);
         private static HumidityAverageViewModel humidityAverageViewModel = new HumidityAverageViewModel(frameNavigation);
         private static LoginViewModel loginViewModel = new LoginViewModel(frameNavigation);
         private static MainpageViewModel mainpageViewModel = new MainpageViewModel(frameNavigation);

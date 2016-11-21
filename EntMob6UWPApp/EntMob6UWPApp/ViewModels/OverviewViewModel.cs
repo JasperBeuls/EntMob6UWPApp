@@ -13,7 +13,7 @@ namespace EntMob6UWPApp.ViewModels
     public class OverviewViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        private HumidityDataService humidityDataService;
+        private IHumidityDataService humidityDataService;
         private ObservableCollection<Humidity> humidities;
         private Account loggedInUser;
         private IFrameNavigation frameNavigation;
@@ -46,11 +46,12 @@ namespace EntMob6UWPApp.ViewModels
                 RaisePropertyChanged("LatestHumidity");
             }
         }
-        public OverviewViewModel(IFrameNavigation frameNavigation)
+        public OverviewViewModel(IFrameNavigation frameNavigation,IHumidityDataService humidityDataService)
         {
             this.frameNavigation = frameNavigation;
             Messenger.Default.Register<Account>(this, OnUserReceived);
-            humidityDataService = new HumidityDataService();
+            //humidityDataService = new HumidityDataService();
+            this.humidityDataService = humidityDataService;
             LoadCommands();    
         }
 

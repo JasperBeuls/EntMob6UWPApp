@@ -100,6 +100,7 @@
     </Compile>
     <Compile Include="Converters\DateConverter.cs" />
     <Compile Include="Converters\DoubleConverter.cs" />
+    <Compile Include="DataServiceLocator.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -109,7 +110,10 @@
     <Compile Include="Services\FrameNavigationService.cs" />
     <Compile Include="Services\HumidityAverageDataService.cs" />
     <Compile Include="Services\HumidityDataService.cs" />
+    <Compile Include="Services\IAccountDataService.cs" />
     <Compile Include="Services\IFrameNavigation.cs" />
+    <Compile Include="Services\IHumidityAverageDataService.cs" />
+    <Compile Include="Services\IHumidityDataService.cs" />
     <Compile Include="Utility\CustomCommand.cs" />
     <Compile Include="Utility\Messenger.cs" />
     <Compile Include="ViewModelLocator.cs" />

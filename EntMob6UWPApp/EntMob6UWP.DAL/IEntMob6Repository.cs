@@ -5,7 +5,6 @@ namespace EntMob6UWP.DAL
 {
     public interface IEntMob6Repository
     {
-        Humidity GetHumidityById(string Id);
         List<Humidity> GetAllHumidities();
         List<Humidity> LoadHumidities();
         List<HumidityAverage> GetAllHumidityAveragesMinute();

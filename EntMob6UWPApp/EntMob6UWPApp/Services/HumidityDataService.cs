@@ -5,18 +5,9 @@ using EntMob6UWP.DAL;
 
 namespace EntMob6UWPApp.Services
 {
-    public class HumidityDataService
+    public class HumidityDataService : IHumidityDataService
     {
         IEntMob6Repository repository = new EntMob6APIRepository();
-        public Humidity GetHumidityDetail(string Id)
-        {
-            return repository.GetHumidityById(Id);
-        }
-
-        public List<Humidity> GetDataHumidities()
-        {
-            return repository.LoadHumidities();
-        } 
 
         public List<Humidity> GetAllHumidities()
         {

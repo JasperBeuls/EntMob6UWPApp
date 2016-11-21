@@ -3,6 +3,14 @@
   "version": 1,
   "targets": {
     "UAP,Version=v10.0": {
+      "Etg.SimpleStubs/2.3.1": {
+        "compile": {
+          "lib/uap10.0/Etg.SimpleStubs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Etg.SimpleStubs.dll": {}
+        }
+      },
       "Expression.Blend.Sdk/1.0.2": {
         "compile": {
           "lib/netcore451/Windows.UI.Interactivity.dll": {}
@@ -2456,6 +2464,14 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
+      "Etg.SimpleStubs/2.3.1": {
+        "compile": {
+          "lib/uap10.0/Etg.SimpleStubs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Etg.SimpleStubs.dll": {}
+        }
+      },
       "Expression.Blend.Sdk/1.0.2": {
         "compile": {
           "lib/netcore451/Windows.UI.Interactivity.dll": {}
@@ -4978,6 +4994,14 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
+      "Etg.SimpleStubs/2.3.1": {
+        "compile": {
+          "lib/uap10.0/Etg.SimpleStubs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Etg.SimpleStubs.dll": {}
+        }
+      },
       "Expression.Blend.Sdk/1.0.2": {
         "compile": {
           "lib/netcore451/Windows.UI.Interactivity.dll": {}
@@ -7539,6 +7563,14 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
+      "Etg.SimpleStubs/2.3.1": {
+        "compile": {
+          "lib/uap10.0/Etg.SimpleStubs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Etg.SimpleStubs.dll": {}
+        }
+      },
       "Expression.Blend.Sdk/1.0.2": {
         "compile": {
           "lib/netcore451/Windows.UI.Interactivity.dll": {}
@@ -10070,6 +10102,14 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
+      "Etg.SimpleStubs/2.3.1": {
+        "compile": {
+          "lib/uap10.0/Etg.SimpleStubs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Etg.SimpleStubs.dll": {}
+        }
+      },
       "Expression.Blend.Sdk/1.0.2": {
         "compile": {
           "lib/netcore451/Windows.UI.Interactivity.dll": {}
@@ -12640,6 +12680,14 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
+      "Etg.SimpleStubs/2.3.1": {
+        "compile": {
+          "lib/uap10.0/Etg.SimpleStubs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Etg.SimpleStubs.dll": {}
+        }
+      },
       "Expression.Blend.Sdk/1.0.2": {
         "compile": {
           "lib/netcore451/Windows.UI.Interactivity.dll": {}
@@ -15171,6 +15219,14 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
+      "Etg.SimpleStubs/2.3.1": {
+        "compile": {
+          "lib/uap10.0/Etg.SimpleStubs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Etg.SimpleStubs.dll": {}
+        }
+      },
       "Expression.Blend.Sdk/1.0.2": {
         "compile": {
           "lib/netcore451/Windows.UI.Interactivity.dll": {}
@@ -17742,6 +17798,44 @@
     }
   },
   "libraries": {
+    "Etg.SimpleStubs/2.3.1": {
+      "sha512": "gDXrO4NeKX+SobwN6H4n7E7tiJkLdvl6kCdws2y20FLMxtR52kXTkatYgvgJ5RR0sVEPvxbjOTEf6s2mtwslOA==",
+      "type": "package",
+      "files": [
+        "Etg.SimpleStubs.2.3.1.nupkg.sha512",
+        "Etg.SimpleStubs.nuspec",
+        "build/Etg.SimpleStubs.targets",
+        "content/Properties/SimpleStubs.generated.cs",
+        "content/SimpleStubs.json",
+        "lib/dnxcore50/Etg.SimpleStubs.dll",
+        "lib/dotnet/Etg.SimpleStubs.dll",
+        "lib/dotnet50/Etg.SimpleStubs.dll",
+        "lib/net46/Etg.SimpleStubs.dll",
+        "lib/netcore45/Etg.SimpleStubs.dll",
+        "lib/netcore50/Etg.SimpleStubs.dll",
+        "lib/uap10.0/Etg.SimpleStubs.dll",
+        "tools/Autofac.dll",
+        "tools/Etg.SimpleStubs.CodeGen.dll",
+        "tools/Microsoft.Build.Engine.dll",
+        "tools/Microsoft.Build.Framework.dll",
+        "tools/Microsoft.Build.Tasks.Core.dll",
+        "tools/Microsoft.Build.Utilities.Core.dll",
+        "tools/Microsoft.Build.dll",
+        "tools/Microsoft.CodeAnalysis.CSharp.Workspaces.dll",
+        "tools/Microsoft.CodeAnalysis.CSharp.dll",
+        "tools/Microsoft.CodeAnalysis.Workspaces.Desktop.dll",
+        "tools/Microsoft.CodeAnalysis.Workspaces.dll",
+        "tools/Microsoft.CodeAnalysis.dll",
+        "tools/Newtonsoft.Json.dll",
+        "tools/System.Collections.Immutable.dll",
+        "tools/System.Composition.AttributedModel.dll",
+        "tools/System.Composition.Convention.dll",
+        "tools/System.Composition.Hosting.dll",
+        "tools/System.Composition.Runtime.dll",
+        "tools/System.Composition.TypedParts.dll",
+        "tools/System.Reflection.Metadata.dll"
+      ]
+    },
     "Expression.Blend.Sdk/1.0.2": {
       "sha512": "2rOHxr7HsJ4gVc75JymaFDS80VvhT/1rpm50LHUKRmsykE1cdM4n2rmcntcTSG08/S1ZedLuSWQpb3yBY3xfUQ==",
       "type": "package",

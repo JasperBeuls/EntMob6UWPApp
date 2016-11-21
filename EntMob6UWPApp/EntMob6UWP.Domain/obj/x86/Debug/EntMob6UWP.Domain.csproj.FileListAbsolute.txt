@@ -20,7 +20,6 @@ C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Do
 C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\bin\x86\Debug\EntMob6UWP.Domain.dll
 C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\bin\x86\Debug\EntMob6UWP.Domain.pdb
 C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\bin\x86\Debug\EntMob6UWP.Domain.pri
-C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\EntMob6UWP.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\EntMob6UWP.Domain.dll
 C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\EntMob6UWP.Domain.pdb
 C:\Users\Jasper Beuls\Documents\GitHub\EntMob6UWPApp\EntMob6UWPApp\EntMob6UWP.Domain\obj\x86\Debug\priconfig.xml

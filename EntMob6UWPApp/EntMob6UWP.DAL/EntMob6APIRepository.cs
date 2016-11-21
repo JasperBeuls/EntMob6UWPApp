@@ -23,16 +23,6 @@ namespace EntMob6UWP.DAL
         private static List<Humidity> humidities;
         private List<HumidityAverage> humidityAverages;
         const string API_BASE_URL = "http://localhost:8080";
-        public Humidity GetHumidityById(string Id)
-        {
-            string api = ""; // api url ingeven
-            var uri = new Uri(String.Format("{0}?format=json", api+Id));
-            var client = new HttpClient();
-            var response = Task.Run(() => client.GetAsync(uri)).Result;
-            response.EnsureSuccessStatusCode();
-            var result = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
-            return JsonConvert.DeserializeObject<Humidity>(result);
-        }
 
         public List<Humidity> GetAllHumidities()
         {
