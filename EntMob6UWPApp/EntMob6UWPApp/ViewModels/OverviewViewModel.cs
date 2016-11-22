@@ -18,6 +18,7 @@ namespace EntMob6UWPApp.ViewModels
         private IHumidityDataService humidityDataService;
         private IAirPressureDataService airPressureDataService;
         private IBrightnessDataService brightnessDataService;
+        private ITemperatureDataService temperateDataService;
       //todo: TEMP  private IHumidityDataService humidityDataService;
 
 
@@ -37,15 +38,16 @@ namespace EntMob6UWPApp.ViewModels
         public OverviewViewModel(IFrameNavigation frameNavigation,
             IHumidityDataService humidityDataService,
             IBrightnessDataService brightnessDataService,
-              IAirPressureDataService airPressureDataService
+              IAirPressureDataService airPressureDataService,
+              ITemperatureDataService temperateDataService
             )
         {
             this.frameNavigation = frameNavigation;
             Messenger.Default.Register<Account>(this, OnUserReceived);
-            //humidityDataService = new HumidityDataService();
             this.humidityDataService = humidityDataService;
             this.airPressureDataService = airPressureDataService;
             this.brightnessDataService = brightnessDataService;
+            this.temperateDataService = temperateDataService;
             LoadCommands();    
         }
 
@@ -56,6 +58,7 @@ namespace EntMob6UWPApp.ViewModels
             latestHumidity =humidityDataService.GetLatestHumidity();
             latestAirPressure = airPressureDataService.GetLatestAirPressure();
             latestBrightness = brightnessDataService.GetLatestBrightness();
+            latestTemperature = temperateDataService.GetLatestTemperature();
         }
         private void LoadCommands()
         {
@@ -64,12 +67,12 @@ namespace EntMob6UWPApp.ViewModels
         }
         private void ShowHistoryView(object obj)
         {
-            frameNavigation.NavigateToFrame(typeof(HumidityAverageView));
+            frameNavigation.NavigateToFrame(typeof(AverageView));
         }
 
         private void ShowOverview(object obj)
         {
-            frameNavigation.NavigateToFrame(typeof(OverviewView));
+          //  frameNavigation.NavigateToFrame(typeof(OverviewView));
         }
 
         private bool CanShowValues(object obj)

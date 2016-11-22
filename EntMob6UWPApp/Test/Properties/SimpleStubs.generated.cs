@@ -290,6 +290,147 @@ namespace EntMob6UWP.DAL
     }
 }
 
+namespace EntMob6UWP.DAL
+{
+    [CompilerGenerated]
+    public class StubITemperatureRepository : ITemperatureRepository
+    {
+        private readonly StubContainer<StubITemperatureRepository> _stubs = new StubContainer<StubITemperatureRepository>();
+
+        global::EntMob6UWP.Domain.Temperature global::EntMob6UWP.DAL.ITemperatureRepository.GetLatestTemperature()
+        {
+            return _stubs.GetMethodStub<GetLatestTemperature_Delegate>("GetLatestTemperature").Invoke();
+        }
+
+        public delegate global::EntMob6UWP.Domain.Temperature GetLatestTemperature_Delegate();
+
+        public StubITemperatureRepository GetLatestTemperature(GetLatestTemperature_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.Temperature> global::EntMob6UWP.DAL.ITemperatureRepository.GetAllTemperatures()
+        {
+            return _stubs.GetMethodStub<GetAllTemperatures_Delegate>("GetAllTemperatures").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.Temperature> GetAllTemperatures_Delegate();
+
+        public StubITemperatureRepository GetAllTemperatures(GetAllTemperatures_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.TemperatureAverage> global::EntMob6UWP.DAL.ITemperatureRepository.GetAllTemperatureAveragesMinute()
+        {
+            return _stubs.GetMethodStub<GetAllTemperatureAveragesMinute_Delegate>("GetAllTemperatureAveragesMinute").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.TemperatureAverage> GetAllTemperatureAveragesMinute_Delegate();
+
+        public StubITemperatureRepository GetAllTemperatureAveragesMinute(GetAllTemperatureAveragesMinute_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.TemperatureAverage> global::EntMob6UWP.DAL.ITemperatureRepository.GetAllTemperatureAveragesHour()
+        {
+            return _stubs.GetMethodStub<GetAllTemperatureAveragesHour_Delegate>("GetAllTemperatureAveragesHour").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.TemperatureAverage> GetAllTemperatureAveragesHour_Delegate();
+
+        public StubITemperatureRepository GetAllTemperatureAveragesHour(GetAllTemperatureAveragesHour_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.TemperatureAverage> global::EntMob6UWP.DAL.ITemperatureRepository.GetAllTemperatureAveragesDay()
+        {
+            return _stubs.GetMethodStub<GetAllTemperatureAveragesDay_Delegate>("GetAllTemperatureAveragesDay").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.TemperatureAverage> GetAllTemperatureAveragesDay_Delegate();
+
+        public StubITemperatureRepository GetAllTemperatureAveragesDay(GetAllTemperatureAveragesDay_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.TemperatureAverage> global::EntMob6UWP.DAL.ITemperatureRepository.GetAllTemperatureAveragesMonth()
+        {
+            return _stubs.GetMethodStub<GetAllTemperatureAveragesMonth_Delegate>("GetAllTemperatureAveragesMonth").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.TemperatureAverage> GetAllTemperatureAveragesMonth_Delegate();
+
+        public StubITemperatureRepository GetAllTemperatureAveragesMonth(GetAllTemperatureAveragesMonth_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+    }
+}
+
+namespace EntMob6UWP.Domain
+{
+    [CompilerGenerated]
+    public class StubIAverage : IAverage
+    {
+        private readonly StubContainer<StubIAverage> _stubs = new StubContainer<StubIAverage>();
+
+        global::System.DateTime global::EntMob6UWP.Domain.IAverage.Date
+        {
+            get
+            {
+                return _stubs.GetMethodStub<Date_Get_Delegate>("get_Date").Invoke();
+            }
+
+            set
+            {
+                _stubs.GetMethodStub<Date_Set_Delegate>("set_Date").Invoke(value);
+            }
+        }
+
+        double global::EntMob6UWP.Domain.IAverage.Average
+        {
+            get
+            {
+                return _stubs.GetMethodStub<Average_Get_Delegate>("get_Average").Invoke();
+            }
+        }
+
+        public delegate global::System.DateTime Date_Get_Delegate();
+
+        public StubIAverage Date_Get(Date_Get_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        public delegate void Date_Set_Delegate(global::System.DateTime value);
+
+        public StubIAverage Date_Set(Date_Set_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        public delegate double Average_Get_Delegate();
+
+        public StubIAverage Average_Get(Average_Get_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+    }
+}
+
 namespace EntMob6UWPApp.Services
 {
     [CompilerGenerated]
@@ -615,6 +756,102 @@ namespace EntMob6UWPApp.Services
         public delegate global::EntMob6UWP.Domain.Humidity GetLatestHumidity_Delegate();
 
         public StubIHumidityDataService GetLatestHumidity(GetLatestHumidity_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+    }
+}
+
+namespace EntMob6UWPApp.Services
+{
+    [CompilerGenerated]
+    public class StubITemperatureAverageDataService : ITemperatureAverageDataService
+    {
+        private readonly StubContainer<StubITemperatureAverageDataService> _stubs = new StubContainer<StubITemperatureAverageDataService>();
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.TemperatureAverage> global::EntMob6UWPApp.Services.ITemperatureAverageDataService.GetAllTemperatureAveragesMinute()
+        {
+            return _stubs.GetMethodStub<GetAllTemperatureAveragesMinute_Delegate>("GetAllTemperatureAveragesMinute").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.TemperatureAverage> GetAllTemperatureAveragesMinute_Delegate();
+
+        public StubITemperatureAverageDataService GetAllTemperatureAveragesMinute(GetAllTemperatureAveragesMinute_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.TemperatureAverage> global::EntMob6UWPApp.Services.ITemperatureAverageDataService.GetAllTemperatureAveragesHour()
+        {
+            return _stubs.GetMethodStub<GetAllTemperatureAveragesHour_Delegate>("GetAllTemperatureAveragesHour").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.TemperatureAverage> GetAllTemperatureAveragesHour_Delegate();
+
+        public StubITemperatureAverageDataService GetAllTemperatureAveragesHour(GetAllTemperatureAveragesHour_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.TemperatureAverage> global::EntMob6UWPApp.Services.ITemperatureAverageDataService.GetAllTemperatureAveragesDay()
+        {
+            return _stubs.GetMethodStub<GetAllTemperatureAveragesDay_Delegate>("GetAllTemperatureAveragesDay").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.TemperatureAverage> GetAllTemperatureAveragesDay_Delegate();
+
+        public StubITemperatureAverageDataService GetAllTemperatureAveragesDay(GetAllTemperatureAveragesDay_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.TemperatureAverage> global::EntMob6UWPApp.Services.ITemperatureAverageDataService.GetAllTemperatureAveragesMonth()
+        {
+            return _stubs.GetMethodStub<GetAllTemperatureAveragesMonth_Delegate>("GetAllTemperatureAveragesMonth").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.TemperatureAverage> GetAllTemperatureAveragesMonth_Delegate();
+
+        public StubITemperatureAverageDataService GetAllTemperatureAveragesMonth(GetAllTemperatureAveragesMonth_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+    }
+}
+
+namespace EntMob6UWPApp.Services
+{
+    [CompilerGenerated]
+    public class StubITemperatureDataService : ITemperatureDataService
+    {
+        private readonly StubContainer<StubITemperatureDataService> _stubs = new StubContainer<StubITemperatureDataService>();
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.Temperature> global::EntMob6UWPApp.Services.ITemperatureDataService.GetAllTemperatures()
+        {
+            return _stubs.GetMethodStub<GetAllTemperatures_Delegate>("GetAllTemperatures").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.Temperature> GetAllTemperatures_Delegate();
+
+        public StubITemperatureDataService GetAllTemperatures(GetAllTemperatures_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::EntMob6UWP.Domain.Temperature global::EntMob6UWPApp.Services.ITemperatureDataService.GetLatestTemperature()
+        {
+            return _stubs.GetMethodStub<GetLatestTemperature_Delegate>("GetLatestTemperature").Invoke();
+        }
+
+        public delegate global::EntMob6UWP.Domain.Temperature GetLatestTemperature_Delegate();
+
+        public StubITemperatureDataService GetLatestTemperature(GetLatestTemperature_Delegate del, int count = Times.Forever, bool overwrite = false)
         {
             _stubs.SetMethodStub(del, count, overwrite);
             return this;

@@ -53,16 +53,16 @@
 
                 <StackPanel Name="St2" RelativePanel.Below="ButtonStackPanel">
                     <TextBlock Text="Temperature:" Margin="8"></TextBlock>
-                    <TextBlock Text="{Binding LatestHumidity.Percentage}" Margin="8"></TextBlock>
+                    <TextBlock Text="{Binding LatestTemperature.Value}" Margin="8"></TextBlock>
                 </StackPanel>
                 <StackPanel Name="St3">
                     <TextBlock Text="Light intensity:" Margin="8"></TextBlock>
-                    <TextBlock Text="{Binding LatestBrightness.Percentage}"  Margin="8"></TextBlock>
+                    <TextBlock Text="{Binding LatestBrightness.Value}"  Margin="8"></TextBlock>
                     
                 </StackPanel>
                 <StackPanel Name="St4">
                     <TextBlock Text="Air pressure:" Margin="8"></TextBlock>
-                    <TextBlock Text="{Binding LatestAirPressure.Percentage}" Margin="8"></TextBlock>
+                    <TextBlock Text="{Binding LatestAirPressure.Value}" Margin="8"></TextBlock>
                 </StackPanel>
               
             </RelativePanel>

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using EntMob6UWP.Domain;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using System.Diagnostics;
 
 namespace EntMob6UWP.DAL
 {
@@ -41,7 +42,7 @@ namespace EntMob6UWP.DAL
         public Brightness GetLatestBrightness()
         {
 
-
+            Debug.Write("IT WILL BE CHECKED");
             using (var client = new HttpClient())
             {
 
@@ -61,6 +62,7 @@ namespace EntMob6UWP.DAL
 
 
             }
+            Debug.Write("IT WILL BE NULL");
             return null;
 
         }

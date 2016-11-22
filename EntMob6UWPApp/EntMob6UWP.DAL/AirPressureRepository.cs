@@ -16,7 +16,7 @@ namespace EntMob6UWP.DAL
             using (var client = new HttpClient())
             {
 
-                string endpoint = Helper.API_BASE_URL + "/airPressure"; // api url ingeven
+                string endpoint = Helper.API_BASE_URL + "/airpressure"; // api url ingeven
                 client.BaseAddress = new Uri(endpoint);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Helper.getBaseEncodedAccount()));
@@ -44,7 +44,7 @@ namespace EntMob6UWP.DAL
             using (var client = new HttpClient())
             {
 
-                string endpoint = Helper.API_BASE_URL + "/airPressure/latest"; // api url ingeven
+                string endpoint = Helper.API_BASE_URL + "/airpressure/latest"; // api url ingeven
                 client.BaseAddress = new Uri(endpoint);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Helper.getBaseEncodedAccount()));
@@ -72,7 +72,7 @@ namespace EntMob6UWP.DAL
             using (var client = new HttpClient())
             {
 
-                string endpoint = Helper.API_BASE_URL + "/airPressure/minute"; // api url ingeven
+                string endpoint = Helper.API_BASE_URL + "/airpressure/minute"; // api url ingeven
                 client.BaseAddress = new Uri(endpoint);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Helper.getBaseEncodedAccount()));
@@ -96,7 +96,7 @@ namespace EntMob6UWP.DAL
             using (var client = new HttpClient())
             {
 
-                string endpoint = Helper.API_BASE_URL + "/airPressure/hour"; // api url ingeven
+                string endpoint = Helper.API_BASE_URL + "/airpressure/hour"; // api url ingeven
                 client.BaseAddress = new Uri(endpoint);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Helper.getBaseEncodedAccount()));
@@ -120,7 +120,7 @@ namespace EntMob6UWP.DAL
             using (var client = new HttpClient())
             {
 
-                string endpoint = Helper.API_BASE_URL + "/airPressure/day"; // api url ingeven
+                string endpoint = Helper.API_BASE_URL + "/airpressure/day"; // api url ingeven
                 client.BaseAddress = new Uri(endpoint);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Helper.getBaseEncodedAccount()));
@@ -144,7 +144,7 @@ namespace EntMob6UWP.DAL
             using (var client = new HttpClient())
             {
 
-                string endpoint = Helper.API_BASE_URL + "/airPressure/month"; // api url ingeven
+                string endpoint = Helper.API_BASE_URL + "/airpressure/month"; // api url ingeven
                 client.BaseAddress = new Uri(endpoint);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Helper.getBaseEncodedAccount()));

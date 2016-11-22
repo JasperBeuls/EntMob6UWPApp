@@ -7,9 +7,8 @@ namespace EntMob6UWPApp
    
     public static class DataServiceLocator
     {
+
         public static IAccountDataService AccountDataService { get; } = new AccountDataService();
-
-
         public static IHumidityAverageDataService HumidityAverageDataService { get; } = new HumidityAverageDataService();
         public static IHumidityDataService HumidityDataService { get; } = new HumidityDataService();
 
@@ -17,5 +16,7 @@ namespace EntMob6UWPApp
         public static IAirPressureDataService AirPressureDataService { get; } = new AirPressureDataService();
         public static IBrightnessAverageDataService BrightnessAverageDataService { get; } = new BrightnessAverageDataService();
         public static IBrightnessDataService BrightnessDataService { get; } = new BrightnessDataService();
+        public static ITemperatureAverageDataService TemperatureAverageDataService { get; } = new TemperatureAverageDataService();
+        public static ITemperatureDataService TemperatureDataService { get; } = new TemperatureDataService();
     }
 }

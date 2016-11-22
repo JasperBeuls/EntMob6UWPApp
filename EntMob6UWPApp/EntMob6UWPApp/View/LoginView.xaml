@@ -8,28 +8,76 @@
     mc:Ignorable="d"
     DataContext="{Binding Source={StaticResource mainViewModelLocator},Path=LoginViewModel}">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Viewbox Stretch="Uniform">
-            <StackPanel Name="loginStackPanel">
-                
-                <StackPanel Orientation="Horizontal" >
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/KJP2TJn.jpg"
+                    Stretch="UniformToFill" />
+        </Grid.Background>
+
+        <RelativePanel
+                   >
+            
+            <RelativePanel Name="loginStackPanel" 
+                        RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"
+                        RelativePanel.AlignLeftWithPanel="True"
+                        RelativePanel.AlignRightWithPanel="True"
+                        Background="#AA000000"
+                           
+                         Height="300"
+                        >
+                <Border BorderBrush="Black" CornerRadius="10,10,10,10"  RelativePanel.AlignHorizontalCenterWithPanel="True"
+                            RelativePanel.AlignVerticalCenterWithPanel="True"
+                            Width="200"
+                            Height="120" BorderThickness="2,2,2,2"
+                         Background="#5bc0de">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        
+                       
+                        <TextBlock Name="usernameTextBlock" Text="Username" Grid.Row ="0" Grid.Column="0"
+                                    VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                        <TextBlock Name="passwordTextBlock" Text="Password" Grid.Row ="1" Grid.Column="0"
+                                    VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+
+
+                       
+                        <TextBox Text="{Binding Path=Username,UpdateSourceTrigger=Default, Mode=TwoWay}" Grid.Row ="0" Grid.Column="1"></TextBox>
+                        <PasswordBox Password="{Binding Path=Password,UpdateSourceTrigger=Default, Mode=TwoWay}" Name="myPasswordBox" Grid.Row ="1" Grid.Column="1"></PasswordBox>
+                        <Button Content="Login" Foreground="DarkGray" Width="180" Background="White" Grid.Row="2" Grid.ColumnSpan="2"
+                                Command="{Binding LoginCommand}" 
+                                VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
+                    </Grid>
+                    <!--<StackPanel Orientation="Horizontal"
+                           
+                           >
 
                     <StackPanel>
                         <TextBlock Name="usernameTextBlock" Text="Username" MinHeight="35"></TextBlock>
                         <TextBlock Name="passwordTextBlock" Text="Password" MinHeight="30"></TextBlock>
-                        
+                       
                     </StackPanel>
                     <StackPanel>
                         <TextBox Text="{Binding Path=Username,UpdateSourceTrigger=Default, Mode=TwoWay}"></TextBox>
                         <TextBox Text="{Binding Path=Password,UpdateSourceTrigger=Default, Mode=TwoWay}"></TextBox>
+                    </StackPanel>
+                </StackPanel>-->
+                </Border>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    
                 </StackPanel>
-                </StackPanel>
-                
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <Button Content="Login" Command="{Binding LoginCommand}"></Button>
-            </StackPanel>
-            </StackPanel>
-        </Viewbox>
+                    
+            </RelativePanel>
+
+        </RelativePanel>
+          
         <Frame x:Name="MainPageFrame"></Frame>
     </Grid>
 </Page>

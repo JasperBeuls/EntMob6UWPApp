@@ -8,7 +8,7 @@ namespace EntMob6UWPApp.Converters
         public object Convert(object value, Type targetType, object parameter, string language)
         {
             double percentage = (double)value;
-            return Math.Round(percentage,2) + "%";
+            return Math.Round(percentage,2);
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)

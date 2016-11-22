@@ -7,8 +7,13 @@ namespace EntMob6UWPApp.Extensions
     {
         public static ObservableCollection<T> ToObservableCollection<T>(this IEnumerable<T> col)
         {
+      
             var c = new ObservableCollection<T>();
-            foreach (var e in col)
+            if (col == null)
+            {
+                return c;
+            }
+                foreach (var e in col)
             {
              c.Add(e);   
             }

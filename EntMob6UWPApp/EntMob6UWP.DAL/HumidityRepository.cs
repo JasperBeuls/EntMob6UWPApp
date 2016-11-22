@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using EntMob6UWP.Domain;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using System.Diagnostics;
 
 namespace EntMob6UWP.DAL
 {

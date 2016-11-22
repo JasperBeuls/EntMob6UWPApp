@@ -14,9 +14,17 @@ namespace EntMob6UWPApp
             frameNavigation,
             DataServiceLocator.HumidityDataService,
             DataServiceLocator.BrightnessDataService,
-            DataServiceLocator.AirPressureDataService);
-        private static HumidityAverageViewModel humidityAverageViewModel = new HumidityAverageViewModel(frameNavigation);
-        private static LoginViewModel loginViewModel = new LoginViewModel(frameNavigation);
+            DataServiceLocator.AirPressureDataService,
+            DataServiceLocator.TemperatureDataService);
+        private static AverageViewModel humidityAverageViewModel = new AverageViewModel(frameNavigation,
+            DataServiceLocator.HumidityAverageDataService,
+            DataServiceLocator.BrightnessAverageDataService,
+            DataServiceLocator.TemperatureAverageDataService,
+            DataServiceLocator.AirPressureAverageDataService
+            
+
+            );
+        private static LoginViewModel loginViewModel = new LoginViewModel(frameNavigation,DataServiceLocator.AccountDataService);
         private static MainpageViewModel mainpageViewModel = new MainpageViewModel(frameNavigation);
         private static HistoryViewModel historyViewModel = new HistoryViewModel(frameNavigation);
 
@@ -29,7 +37,7 @@ namespace EntMob6UWPApp
             get { return overviewViewModel; }
         }
 
-        public static HumidityAverageViewModel HumidityAverageViewModel
+        public static AverageViewModel HumidityAverageViewModel
         {
             get { return humidityAverageViewModel;}
         }

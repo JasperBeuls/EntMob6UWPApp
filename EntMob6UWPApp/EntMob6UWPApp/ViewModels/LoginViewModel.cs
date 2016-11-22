@@ -7,6 +7,7 @@ using EntMob6UWPApp.Services;
 using EntMob6UWPApp.Utility;
 using EntMob6UWPApp.View;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Windows.UI.Xaml.Controls;
 
 namespace EntMob6UWPApp.ViewModels
 {
@@ -15,9 +16,8 @@ namespace EntMob6UWPApp.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
         private string username;
         private string password;
-        private Account user;
         private IFrameNavigation frameNavigation;
-        private AccountDataService accountDataService = new AccountDataService();
+        private IAccountDataService accountDataService;
         public ICommand LoginCommand { get; set; }
         private void RaisePropertyChanged(string propertyName)
         {
@@ -43,9 +43,11 @@ namespace EntMob6UWPApp.ViewModels
             }
         }
 
-        public LoginViewModel(IFrameNavigation frameNavigation)
+        public LoginViewModel(
+            IFrameNavigation frameNavigation,
+            IAccountDataService accountDataService)
         {
-
+            this.accountDataService = accountDataService;
             this.frameNavigation = frameNavigation;
             LoadCommands();
 
@@ -58,16 +60,22 @@ namespace EntMob6UWPApp.ViewModels
 
         private void LoginUser(object obj)
         {
-            
-            Account returnedAccount = accountDataService.GetAccount(this.username, this.password);
+            String s = obj as String;
+
+            Account returnedAccount = accountDataService.GetAccount(this.username, Password);
             if (returnedAccount != null)
             {
-                Messenger.Default.Send<Account>(user);
+                Messenger.Default.Send<Account>(returnedAccount);
                 frameNavigation.NavigateToFrame(typeof (OverviewView));
             }
             else
             {
-                showMessage();
+                if (s==null)
+                {
+                    showMessage();
+                   
+                }
+                
             }
             
         }

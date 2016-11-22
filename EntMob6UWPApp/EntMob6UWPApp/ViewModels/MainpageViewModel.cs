@@ -50,7 +50,7 @@ namespace EntMob6UWPApp.ViewModels
 
         private void ShowOverview(object obj)
         {
-            frameNavigation.NavigateToFrame(typeof(OverviewView));
+           frameNavigation.NavigateToFrame(typeof(OverviewView));
         }
 
         private bool CanShowValues(object obj)
