@@ -6,7 +6,7 @@ namespace EntMob6UWPApp.Services
 {
     public class HumidityAverageDataService : IHumidityAverageDataService
     {
-        IEntMob6Repository repository = new EntMob6APIRepository();
+        IHumidityRepository repository = new HumidityRepository();
         public List<HumidityAverage> GetAllHumidityAveragesMinute()
         {
             return repository.GetAllHumidityAveragesMinute();
@@ -23,9 +23,6 @@ namespace EntMob6UWPApp.Services
         {
             return repository.GetAllHumidityAveragesMonth();
         }
-        public List<HumidityAverage> GetAllHumidityAveragesTest()
-        {
-            return repository.LoadHumidityAverages();
-        }
+       
     }
 }

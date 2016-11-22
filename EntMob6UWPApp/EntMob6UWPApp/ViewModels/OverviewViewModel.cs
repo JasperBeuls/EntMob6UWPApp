@@ -46,7 +46,8 @@ namespace EntMob6UWPApp.ViewModels
                 RaisePropertyChanged("LatestHumidity");
             }
         }
-        public OverviewViewModel(IFrameNavigation frameNavigation,IHumidityDataService humidityDataService)
+        public OverviewViewModel(IFrameNavigation frameNavigation,
+            IHumidityDataService humidityDataService)
         {
             this.frameNavigation = frameNavigation;
             Messenger.Default.Register<Account>(this, OnUserReceived);
@@ -57,9 +58,9 @@ namespace EntMob6UWPApp.ViewModels
 
         public void LoadData()
         {
-            humidities = humidityDataService.GetAllHumidities().ToObservableCollection();
+         
             //humidities = humidityDataService.GetDataHumidities().ToObservableCollection();
-            latestHumidity = humidities.LastOrDefault();
+            latestHumidity =humidityDataService.GetLatestHumidity();
         }
         private void LoadCommands()
         {

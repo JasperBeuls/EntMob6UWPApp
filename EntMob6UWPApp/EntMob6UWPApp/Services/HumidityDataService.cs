@@ -7,11 +7,16 @@ namespace EntMob6UWPApp.Services
 {
     public class HumidityDataService : IHumidityDataService
     {
-        IEntMob6Repository repository = new EntMob6APIRepository();
+        IHumidityRepository repository = new HumidityRepository();
 
         public List<Humidity> GetAllHumidities()
         {
             return repository.GetAllHumidities();
+        }
+
+        public Humidity GetLatestHumidity()
+        {
+            return repository.GetLatestHumidity();
         }
     }
 }

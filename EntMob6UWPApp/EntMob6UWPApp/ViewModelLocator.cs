@@ -2,9 +2,11 @@
 using EntMob6UWPApp.Services;
 using EntMob6UWPApp.ViewModels;
 using Microsoft.EntityFrameworkCore.Design;
+using Windows.UI.Xaml.Data;
 
 namespace EntMob6UWPApp
 {
+    [Bindable]
     public class ViewModelLocator
     {
         private static IFrameNavigation frameNavigation = new FrameNavigationService();

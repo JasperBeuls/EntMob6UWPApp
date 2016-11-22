@@ -9,6 +9,5 @@ namespace EntMob6UWPApp.Services
         List<HumidityAverage> GetAllHumidityAveragesHour();
         List<HumidityAverage> GetAllHumidityAveragesDay();
         List<HumidityAverage> GetAllHumidityAveragesMonth();
-        List<HumidityAverage> GetAllHumidityAveragesTest();
     }
 }

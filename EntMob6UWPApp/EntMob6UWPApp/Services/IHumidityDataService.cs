@@ -6,5 +6,6 @@ namespace EntMob6UWPApp.Services
     public interface IHumidityDataService
     {
         List<Humidity> GetAllHumidities();
+        Humidity GetLatestHumidity();
     }
 }

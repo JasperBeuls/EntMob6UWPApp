@@ -5,7 +5,7 @@ namespace EntMob6UWPApp.Services
 {
     public class AccountDataService : IAccountDataService
     {
-        IEntMob6Repository repository = new EntMob6APIRepository();
+        IAccountRepository repository = new AccountRepository();
 
         public Account GetAccount(string username, string password)
         {
