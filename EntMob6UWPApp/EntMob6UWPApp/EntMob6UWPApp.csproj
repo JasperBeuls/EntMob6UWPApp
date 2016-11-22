@@ -107,10 +107,14 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AccountDataService.cs" />
+    <Compile Include="Services\BrightnessAverageDataService.cs" />
+    <Compile Include="Services\BrightnessDataService.cs" />
     <Compile Include="Services\FrameNavigationService.cs" />
     <Compile Include="Services\HumidityAverageDataService.cs" />
     <Compile Include="Services\HumidityDataService.cs" />
     <Compile Include="Services\IAccountDataService.cs" />
+    <Compile Include="Services\IBrightnessAverageDataService.cs" />
+    <Compile Include="Services\IBrightnessDataService.cs" />
     <Compile Include="Services\IFrameNavigation.cs" />
     <Compile Include="Services\IHumidityAverageDataService.cs" />
     <Compile Include="Services\IHumidityDataService.cs" />

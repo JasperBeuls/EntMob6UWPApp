@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntMob6UWP.Domain
 {
-    class Brightness
+    public class Brightness
     {
         public string ID { get; set; }
 

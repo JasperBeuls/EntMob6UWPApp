@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntMob6UWP.Domain
 {
-    class Temperature
+    public class Temperature
     {
         public string ID { get; set; }
 

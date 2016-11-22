@@ -10,46 +10,14 @@ using Newtonsoft.Json.Converters;
 
 namespace EntMob6UWP.DAL
 {
-    public class HumidityRepository : IHumidityRepository
+    public class BrightnessRepository : IBrightnessRepository
     {
-       
-      
-     
-
-        public List<Humidity> GetAllHumidities()
+        public List<Brightness> GetAllBrightnesses()
         {
-          
-        
-            using (var client = new HttpClient())
-            {
-            
-                string endpoint = Helper.API_BASE_URL + "/humidity"; // api url ingeven
-                client.BaseAddress = new Uri(endpoint);
-                client.DefaultRequestHeaders.Accept.Clear();
-                client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic",Helper.getBaseEncodedAccount()));
-                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-                var response = Task.Run(()=> client.GetAsync(endpoint)).Result;
-                if (response.IsSuccessStatusCode)
-                {
-                 var   str = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
-                    
-                    var root = JsonConvert.DeserializeObject<List<Humidity>>(str);
-                    return root;
-                }
-       
-
-            }
-            return null;
-
-        }
-        public Humidity GetLatestHumidity()
-        {
-
-
             using (var client = new HttpClient())
             {
 
-                string endpoint = Helper.API_BASE_URL + "/humidity/latest"; // api url ingeven
+                string endpoint = Helper.API_BASE_URL + "/brightness"; // api url ingeven
                 client.BaseAddress = new Uri(endpoint);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Helper.getBaseEncodedAccount()));
@@ -59,7 +27,7 @@ namespace EntMob6UWP.DAL
                 {
                     var str = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
 
-                    var root = JsonConvert.DeserializeObject<Humidity>(str);
+                    var root = JsonConvert.DeserializeObject<List<Brightness>>(str);
                     return root;
                 }
 
@@ -67,17 +35,17 @@ namespace EntMob6UWP.DAL
             }
             return null;
 
+
+
         }
-
-       
-        
-
-        public List<HumidityAverage> GetAllHumidityAveragesMinute()
+        public Brightness GetLatestBrightness()
         {
+
+
             using (var client = new HttpClient())
             {
 
-                string endpoint = Helper.API_BASE_URL + "/humidity/minute"; // api url ingeven
+                string endpoint = Helper.API_BASE_URL + "/brightness/latest"; // api url ingeven
                 client.BaseAddress = new Uri(endpoint);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Helper.getBaseEncodedAccount()));
@@ -87,21 +55,25 @@ namespace EntMob6UWP.DAL
                 {
                     var str = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
 
-                    var root = JsonConvert.DeserializeObject<List<HumidityAverage>>(str);
+                    var root = JsonConvert.DeserializeObject<Brightness>(str);
                     return root;
                 }
 
 
             }
             return null;
+
         }
 
-        public List<HumidityAverage> GetAllHumidityAveragesHour()
+
+
+
+        public List<BrightnessAverage> GetAllBrightnessAveragesMinute()
         {
             using (var client = new HttpClient())
             {
 
-                string endpoint = Helper.API_BASE_URL + "/humidity/hour"; // api url ingeven
+                string endpoint = Helper.API_BASE_URL + "/brightness/minute"; // api url ingeven
                 client.BaseAddress = new Uri(endpoint);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Helper.getBaseEncodedAccount()));
@@ -111,7 +83,7 @@ namespace EntMob6UWP.DAL
                 {
                     var str = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
 
-                    var root = JsonConvert.DeserializeObject<List<HumidityAverage>>(str);
+                    var root = JsonConvert.DeserializeObject<List<BrightnessAverage>>(str);
                     return root;
                 }
 
@@ -120,12 +92,12 @@ namespace EntMob6UWP.DAL
             return null;
         }
 
-        public List<HumidityAverage> GetAllHumidityAveragesDay()
+        public List<BrightnessAverage> GetAllBrightnessAveragesHour()
         {
             using (var client = new HttpClient())
             {
 
-                string endpoint = Helper.API_BASE_URL + "/humidity/day"; // api url ingeven
+                string endpoint = Helper.API_BASE_URL + "/brightness/hour"; // api url ingeven
                 client.BaseAddress = new Uri(endpoint);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Helper.getBaseEncodedAccount()));
@@ -135,7 +107,7 @@ namespace EntMob6UWP.DAL
                 {
                     var str = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
 
-                    var root = JsonConvert.DeserializeObject<List<HumidityAverage>>(str);
+                    var root = JsonConvert.DeserializeObject<List<BrightnessAverage>>(str);
                     return root;
                 }
 
@@ -144,12 +116,12 @@ namespace EntMob6UWP.DAL
             return null;
         }
 
-        public List<HumidityAverage> GetAllHumidityAveragesMonth()
+        public List<BrightnessAverage> GetAllBrightnessAveragesDay()
         {
             using (var client = new HttpClient())
             {
 
-                string endpoint = Helper.API_BASE_URL + "/humidity/month"; // api url ingeven
+                string endpoint = Helper.API_BASE_URL + "/brightness/day"; // api url ingeven
                 client.BaseAddress = new Uri(endpoint);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Helper.getBaseEncodedAccount()));
@@ -159,7 +131,7 @@ namespace EntMob6UWP.DAL
                 {
                     var str = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
 
-                    var root = JsonConvert.DeserializeObject<List<HumidityAverage>>(str);
+                    var root = JsonConvert.DeserializeObject<List<BrightnessAverage>>(str);
                     return root;
                 }
 
@@ -168,10 +140,31 @@ namespace EntMob6UWP.DAL
             return null;
         }
 
-       
+        public List<BrightnessAverage> GetAllBrightnessAveragesMonth()
+        {
+            using (var client = new HttpClient())
+            {
+
+                string endpoint = Helper.API_BASE_URL + "/brightness/month"; // api url ingeven
+                client.BaseAddress = new Uri(endpoint);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Authorization = (new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Helper.getBaseEncodedAccount()));
+                client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+                var response = Task.Run(() => client.GetAsync(endpoint)).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    var str = Task.Run(() => response.Content.ReadAsStringAsync()).Result;
+
+                    var root = JsonConvert.DeserializeObject<List<BrightnessAverage>>(str);
+                    return root;
+                }
+
+
+            }
+            return null;
+        }
 
         
-      
-      
     }
 }
+

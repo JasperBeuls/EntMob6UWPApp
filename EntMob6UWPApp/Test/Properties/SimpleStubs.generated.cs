@@ -1,15 +1,40 @@
 using System;
 using System.Runtime.CompilerServices;
 using Etg.SimpleStubs;
-using System.Collections.Generic;
 using EntMob6UWP.Domain;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace EntMob6UWP.DAL
 {
     [CompilerGenerated]
-    public class StubIEntMob6Repository : IHumidityRepository
+    public class StubIAccountRepository : IAccountRepository
     {
-        private readonly StubContainer<StubIEntMob6Repository> _stubs = new StubContainer<StubIEntMob6Repository>();
+        private readonly StubContainer<StubIAccountRepository> _stubs = new StubContainer<StubIAccountRepository>();
+
+        global::EntMob6UWP.Domain.Account global::EntMob6UWP.DAL.IAccountRepository.GetAccount(string username, string password)
+        {
+            return _stubs.GetMethodStub<GetAccount_String_String_Delegate>("GetAccount").Invoke(username, password);
+        }
+
+        public delegate global::EntMob6UWP.Domain.Account GetAccount_String_String_Delegate(string username, string password);
+
+        public StubIAccountRepository GetAccount(GetAccount_String_String_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+    }
+}
+
+namespace EntMob6UWP.DAL
+{
+    [CompilerGenerated]
+    public class StubIHumidityRepository : IHumidityRepository
+    {
+        private readonly StubContainer<StubIHumidityRepository> _stubs = new StubContainer<StubIHumidityRepository>();
 
         global::EntMob6UWP.Domain.Humidity global::EntMob6UWP.DAL.IHumidityRepository.GetLatestHumidity()
         {
@@ -18,7 +43,7 @@ namespace EntMob6UWP.DAL
 
         public delegate global::EntMob6UWP.Domain.Humidity GetLatestHumidity_Delegate();
 
-        public StubIEntMob6Repository GetLatestHumidity(GetLatestHumidity_Delegate del, int count = Times.Forever, bool overwrite = false)
+        public StubIHumidityRepository GetLatestHumidity(GetLatestHumidity_Delegate del, int count = Times.Forever, bool overwrite = false)
         {
             _stubs.SetMethodStub(del, count, overwrite);
             return this;
@@ -31,20 +56,7 @@ namespace EntMob6UWP.DAL
 
         public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.Humidity> GetAllHumidities_Delegate();
 
-        public StubIEntMob6Repository GetAllHumidities(GetAllHumidities_Delegate del, int count = Times.Forever, bool overwrite = false)
-        {
-            _stubs.SetMethodStub(del, count, overwrite);
-            return this;
-        }
-
-        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.Humidity> global::EntMob6UWP.DAL.IHumidityRepository.LoadHumidities()
-        {
-            return _stubs.GetMethodStub<LoadHumidities_Delegate>("LoadHumidities").Invoke();
-        }
-
-        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.Humidity> LoadHumidities_Delegate();
-
-        public StubIEntMob6Repository LoadHumidities(LoadHumidities_Delegate del, int count = Times.Forever, bool overwrite = false)
+        public StubIHumidityRepository GetAllHumidities(GetAllHumidities_Delegate del, int count = Times.Forever, bool overwrite = false)
         {
             _stubs.SetMethodStub(del, count, overwrite);
             return this;
@@ -57,7 +69,7 @@ namespace EntMob6UWP.DAL
 
         public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.HumidityAverage> GetAllHumidityAveragesMinute_Delegate();
 
-        public StubIEntMob6Repository GetAllHumidityAveragesMinute(GetAllHumidityAveragesMinute_Delegate del, int count = Times.Forever, bool overwrite = false)
+        public StubIHumidityRepository GetAllHumidityAveragesMinute(GetAllHumidityAveragesMinute_Delegate del, int count = Times.Forever, bool overwrite = false)
         {
             _stubs.SetMethodStub(del, count, overwrite);
             return this;
@@ -70,7 +82,7 @@ namespace EntMob6UWP.DAL
 
         public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.HumidityAverage> GetAllHumidityAveragesHour_Delegate();
 
-        public StubIEntMob6Repository GetAllHumidityAveragesHour(GetAllHumidityAveragesHour_Delegate del, int count = Times.Forever, bool overwrite = false)
+        public StubIHumidityRepository GetAllHumidityAveragesHour(GetAllHumidityAveragesHour_Delegate del, int count = Times.Forever, bool overwrite = false)
         {
             _stubs.SetMethodStub(del, count, overwrite);
             return this;
@@ -83,7 +95,7 @@ namespace EntMob6UWP.DAL
 
         public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.HumidityAverage> GetAllHumidityAveragesDay_Delegate();
 
-        public StubIEntMob6Repository GetAllHumidityAveragesDay(GetAllHumidityAveragesDay_Delegate del, int count = Times.Forever, bool overwrite = false)
+        public StubIHumidityRepository GetAllHumidityAveragesDay(GetAllHumidityAveragesDay_Delegate del, int count = Times.Forever, bool overwrite = false)
         {
             _stubs.SetMethodStub(del, count, overwrite);
             return this;
@@ -96,33 +108,7 @@ namespace EntMob6UWP.DAL
 
         public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.HumidityAverage> GetAllHumidityAveragesMonth_Delegate();
 
-        public StubIEntMob6Repository GetAllHumidityAveragesMonth(GetAllHumidityAveragesMonth_Delegate del, int count = Times.Forever, bool overwrite = false)
-        {
-            _stubs.SetMethodStub(del, count, overwrite);
-            return this;
-        }
-
-        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.HumidityAverage> global::EntMob6UWP.DAL.IHumidityRepository.LoadHumidityAverages()
-        {
-            return _stubs.GetMethodStub<LoadHumidityAverages_Delegate>("LoadHumidityAverages").Invoke();
-        }
-
-        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.HumidityAverage> LoadHumidityAverages_Delegate();
-
-        public StubIEntMob6Repository LoadHumidityAverages(LoadHumidityAverages_Delegate del, int count = Times.Forever, bool overwrite = false)
-        {
-            _stubs.SetMethodStub(del, count, overwrite);
-            return this;
-        }
-
-        global::EntMob6UWP.Domain.Account global::EntMob6UWP.DAL.IHumidityRepository.GetAccount(string username, string password)
-        {
-            return _stubs.GetMethodStub<GetAccount_String_String_Delegate>("GetAccount").Invoke(username, password);
-        }
-
-        public delegate global::EntMob6UWP.Domain.Account GetAccount_String_String_Delegate(string username, string password);
-
-        public StubIEntMob6Repository GetAccount(GetAccount_String_String_Delegate del, int count = Times.Forever, bool overwrite = false)
+        public StubIHumidityRepository GetAllHumidityAveragesMonth(GetAllHumidityAveragesMonth_Delegate del, int count = Times.Forever, bool overwrite = false)
         {
             _stubs.SetMethodStub(del, count, overwrite);
             return this;
@@ -228,19 +214,6 @@ namespace EntMob6UWPApp.Services
         public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.HumidityAverage> GetAllHumidityAveragesMonth_Delegate();
 
         public StubIHumidityAverageDataService GetAllHumidityAveragesMonth(GetAllHumidityAveragesMonth_Delegate del, int count = Times.Forever, bool overwrite = false)
-        {
-            _stubs.SetMethodStub(del, count, overwrite);
-            return this;
-        }
-
-        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.HumidityAverage> global::EntMob6UWPApp.Services.IHumidityAverageDataService.GetAllHumidityAveragesTest()
-        {
-            return _stubs.GetMethodStub<GetAllHumidityAveragesTest_Delegate>("GetAllHumidityAveragesTest").Invoke();
-        }
-
-        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.HumidityAverage> GetAllHumidityAveragesTest_Delegate();
-
-        public StubIHumidityAverageDataService GetAllHumidityAveragesTest(GetAllHumidityAveragesTest_Delegate del, int count = Times.Forever, bool overwrite = false)
         {
             _stubs.SetMethodStub(del, count, overwrite);
             return this;

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntMob6UWP.Domain
 {
-    class AirPressure
+    public class AirPressure
     {
         public string ID { get; set; }
 

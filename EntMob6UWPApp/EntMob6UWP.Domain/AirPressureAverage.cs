@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntMob6UWP.Domain
 {
-    class AirPressureAverage
+    public class AirPressureAverage
     {
         public string ID { get; set; }
         public DateTime Date { get; set; }

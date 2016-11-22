@@ -108,9 +108,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountRepository.cs" />
+    <Compile Include="BrightnessRepository.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="HumidityRepository.cs" />
     <Compile Include="IAccountRepository.cs" />
+    <Compile Include="IBrightnessRepository.cs" />
     <Compile Include="IHumidityRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\EntMob6UWP.DAL.rd.xml" />
@@ -120,6 +122,9 @@
       <Project>{2bc82cee-d5fd-4c80-96f6-1c164aa1b56e}</Project>
       <Name>EntMob6UWP.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
