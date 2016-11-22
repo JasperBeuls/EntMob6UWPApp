@@ -12,10 +12,16 @@ namespace EntMob6UWPApp.ViewModels
 {
     public class OverviewViewModel : INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-        private IHumidityDataService humidityDataService;
-        private ObservableCollection<Humidity> humidities;
         private Account loggedInUser;
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private IHumidityDataService humidityDataService;
+        private IAirPressureDataService airPressureDataService;
+        private IBrightnessDataService brightnessDataService;
+      //todo: TEMP  private IHumidityDataService humidityDataService;
+
+
+
         private IFrameNavigation frameNavigation;
         public ICommand OverviewCommand { get; set; }
         public ICommand HistoryCommand { get; set; }
@@ -25,34 +31,21 @@ namespace EntMob6UWPApp.ViewModels
         }
 
 
-        public ObservableCollection<Humidity> Humidities
-        {
-            get { return Humidities; }
-            set
-            {
-                Humidities = value;
-                RaisePropertyChanged("Humidities");
-            }
-        }
+       
 
-        private Humidity latestHumidity;
-
-        public Humidity LatestHumidity
-        {
-            get { return latestHumidity;}
-            set
-            {
-                latestHumidity = value;
-                RaisePropertyChanged("LatestHumidity");
-            }
-        }
+        
         public OverviewViewModel(IFrameNavigation frameNavigation,
-            IHumidityDataService humidityDataService)
+            IHumidityDataService humidityDataService,
+            IBrightnessDataService brightnessDataService,
+              IAirPressureDataService airPressureDataService
+            )
         {
             this.frameNavigation = frameNavigation;
             Messenger.Default.Register<Account>(this, OnUserReceived);
             //humidityDataService = new HumidityDataService();
             this.humidityDataService = humidityDataService;
+            this.airPressureDataService = airPressureDataService;
+            this.brightnessDataService = brightnessDataService;
             LoadCommands();    
         }
 
@@ -61,6 +54,8 @@ namespace EntMob6UWPApp.ViewModels
          
             //humidities = humidityDataService.GetDataHumidities().ToObservableCollection();
             latestHumidity =humidityDataService.GetLatestHumidity();
+            latestAirPressure = airPressureDataService.GetLatestAirPressure();
+            latestBrightness = brightnessDataService.GetLatestBrightness();
         }
         private void LoadCommands()
         {
@@ -97,6 +92,55 @@ namespace EntMob6UWPApp.ViewModels
                 loggedInUser = value;
                 RaisePropertyChanged("LoggedInUser");
 
+            }
+        }
+
+
+        //WEATHER
+
+        private Humidity latestHumidity;
+
+        public Humidity LatestHumidity
+        {
+            get { return latestHumidity; }
+            set
+            {
+                latestHumidity = value;
+                RaisePropertyChanged("LatestHumidity");
+            }
+        }
+
+        private Temperature latestTemperature;
+
+        public Temperature LatestTemperature
+        {
+            get { return latestTemperature; }
+            set
+            {
+                latestTemperature = value;
+                RaisePropertyChanged("LatestTemperature");
+            }
+        }
+        private Brightness latestBrightness;
+
+        public Brightness LatestBrightness
+        {
+            get { return latestBrightness; }
+            set
+            {
+                latestBrightness = value;
+                RaisePropertyChanged("LatestBrightness");
+            }
+        }
+        private AirPressure latestAirPressure;
+
+        public AirPressure LatestAirPressure
+        {
+            get { return latestAirPressure; }
+            set
+            {
+                latestAirPressure = value;
+                RaisePropertyChanged("LatestAirPressure");
             }
         }
     }

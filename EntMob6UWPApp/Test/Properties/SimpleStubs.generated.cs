@@ -32,6 +32,180 @@ namespace EntMob6UWP.DAL
 namespace EntMob6UWP.DAL
 {
     [CompilerGenerated]
+    public class StubIAirPressureRepository : IAirPressureRepository
+    {
+        private readonly StubContainer<StubIAirPressureRepository> _stubs = new StubContainer<StubIAirPressureRepository>();
+
+        global::EntMob6UWP.Domain.AirPressure global::EntMob6UWP.DAL.IAirPressureRepository.GetLatestAirPressure()
+        {
+            return _stubs.GetMethodStub<GetLatestAirPressure_Delegate>("GetLatestAirPressure").Invoke();
+        }
+
+        public delegate global::EntMob6UWP.Domain.AirPressure GetLatestAirPressure_Delegate();
+
+        public StubIAirPressureRepository GetLatestAirPressure(GetLatestAirPressure_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressure> global::EntMob6UWP.DAL.IAirPressureRepository.GetAllAirPressures()
+        {
+            return _stubs.GetMethodStub<GetAllAirPressures_Delegate>("GetAllAirPressures").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressure> GetAllAirPressures_Delegate();
+
+        public StubIAirPressureRepository GetAllAirPressures(GetAllAirPressures_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressureAverage> global::EntMob6UWP.DAL.IAirPressureRepository.GetAllAirPressureAveragesMinute()
+        {
+            return _stubs.GetMethodStub<GetAllAirPressureAveragesMinute_Delegate>("GetAllAirPressureAveragesMinute").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressureAverage> GetAllAirPressureAveragesMinute_Delegate();
+
+        public StubIAirPressureRepository GetAllAirPressureAveragesMinute(GetAllAirPressureAveragesMinute_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressureAverage> global::EntMob6UWP.DAL.IAirPressureRepository.GetAllAirPressureAveragesHour()
+        {
+            return _stubs.GetMethodStub<GetAllAirPressureAveragesHour_Delegate>("GetAllAirPressureAveragesHour").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressureAverage> GetAllAirPressureAveragesHour_Delegate();
+
+        public StubIAirPressureRepository GetAllAirPressureAveragesHour(GetAllAirPressureAveragesHour_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressureAverage> global::EntMob6UWP.DAL.IAirPressureRepository.GetAllAirPressureAveragesDay()
+        {
+            return _stubs.GetMethodStub<GetAllAirPressureAveragesDay_Delegate>("GetAllAirPressureAveragesDay").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressureAverage> GetAllAirPressureAveragesDay_Delegate();
+
+        public StubIAirPressureRepository GetAllAirPressureAveragesDay(GetAllAirPressureAveragesDay_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressureAverage> global::EntMob6UWP.DAL.IAirPressureRepository.GetAllAirPressureAveragesMonth()
+        {
+            return _stubs.GetMethodStub<GetAllAirPressureAveragesMonth_Delegate>("GetAllAirPressureAveragesMonth").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressureAverage> GetAllAirPressureAveragesMonth_Delegate();
+
+        public StubIAirPressureRepository GetAllAirPressureAveragesMonth(GetAllAirPressureAveragesMonth_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+    }
+}
+
+namespace EntMob6UWP.DAL
+{
+    [CompilerGenerated]
+    public class StubIBrightnessRepository : IBrightnessRepository
+    {
+        private readonly StubContainer<StubIBrightnessRepository> _stubs = new StubContainer<StubIBrightnessRepository>();
+
+        global::EntMob6UWP.Domain.Brightness global::EntMob6UWP.DAL.IBrightnessRepository.GetLatestBrightness()
+        {
+            return _stubs.GetMethodStub<GetLatestBrightness_Delegate>("GetLatestBrightness").Invoke();
+        }
+
+        public delegate global::EntMob6UWP.Domain.Brightness GetLatestBrightness_Delegate();
+
+        public StubIBrightnessRepository GetLatestBrightness(GetLatestBrightness_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.Brightness> global::EntMob6UWP.DAL.IBrightnessRepository.GetAllBrightnesses()
+        {
+            return _stubs.GetMethodStub<GetAllBrightnesses_Delegate>("GetAllBrightnesses").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.Brightness> GetAllBrightnesses_Delegate();
+
+        public StubIBrightnessRepository GetAllBrightnesses(GetAllBrightnesses_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.BrightnessAverage> global::EntMob6UWP.DAL.IBrightnessRepository.GetAllBrightnessAveragesMinute()
+        {
+            return _stubs.GetMethodStub<GetAllBrightnessAveragesMinute_Delegate>("GetAllBrightnessAveragesMinute").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.BrightnessAverage> GetAllBrightnessAveragesMinute_Delegate();
+
+        public StubIBrightnessRepository GetAllBrightnessAveragesMinute(GetAllBrightnessAveragesMinute_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.BrightnessAverage> global::EntMob6UWP.DAL.IBrightnessRepository.GetAllBrightnessAveragesHour()
+        {
+            return _stubs.GetMethodStub<GetAllBrightnessAveragesHour_Delegate>("GetAllBrightnessAveragesHour").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.BrightnessAverage> GetAllBrightnessAveragesHour_Delegate();
+
+        public StubIBrightnessRepository GetAllBrightnessAveragesHour(GetAllBrightnessAveragesHour_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.BrightnessAverage> global::EntMob6UWP.DAL.IBrightnessRepository.GetAllBrightnessAveragesDay()
+        {
+            return _stubs.GetMethodStub<GetAllBrightnessAveragesDay_Delegate>("GetAllBrightnessAveragesDay").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.BrightnessAverage> GetAllBrightnessAveragesDay_Delegate();
+
+        public StubIBrightnessRepository GetAllBrightnessAveragesDay(GetAllBrightnessAveragesDay_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.BrightnessAverage> global::EntMob6UWP.DAL.IBrightnessRepository.GetAllBrightnessAveragesMonth()
+        {
+            return _stubs.GetMethodStub<GetAllBrightnessAveragesMonth_Delegate>("GetAllBrightnessAveragesMonth").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.BrightnessAverage> GetAllBrightnessAveragesMonth_Delegate();
+
+        public StubIBrightnessRepository GetAllBrightnessAveragesMonth(GetAllBrightnessAveragesMonth_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+    }
+}
+
+namespace EntMob6UWP.DAL
+{
+    [CompilerGenerated]
     public class StubIHumidityRepository : IHumidityRepository
     {
         private readonly StubContainer<StubIHumidityRepository> _stubs = new StubContainer<StubIHumidityRepository>();
@@ -131,6 +305,198 @@ namespace EntMob6UWPApp.Services
         public delegate global::EntMob6UWP.Domain.Account GetAccount_String_String_Delegate(string username, string password);
 
         public StubIAccountDataService GetAccount(GetAccount_String_String_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+    }
+}
+
+namespace EntMob6UWPApp.Services
+{
+    [CompilerGenerated]
+    public class StubIAirPressureAverageDataService : IAirPressureAverageDataService
+    {
+        private readonly StubContainer<StubIAirPressureAverageDataService> _stubs = new StubContainer<StubIAirPressureAverageDataService>();
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressureAverage> global::EntMob6UWPApp.Services.IAirPressureAverageDataService.GetAllAirPressureAveragesMinute()
+        {
+            return _stubs.GetMethodStub<GetAllAirPressureAveragesMinute_Delegate>("GetAllAirPressureAveragesMinute").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressureAverage> GetAllAirPressureAveragesMinute_Delegate();
+
+        public StubIAirPressureAverageDataService GetAllAirPressureAveragesMinute(GetAllAirPressureAveragesMinute_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressureAverage> global::EntMob6UWPApp.Services.IAirPressureAverageDataService.GetAllAirPressureAveragesHour()
+        {
+            return _stubs.GetMethodStub<GetAllAirPressureAveragesHour_Delegate>("GetAllAirPressureAveragesHour").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressureAverage> GetAllAirPressureAveragesHour_Delegate();
+
+        public StubIAirPressureAverageDataService GetAllAirPressureAveragesHour(GetAllAirPressureAveragesHour_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressureAverage> global::EntMob6UWPApp.Services.IAirPressureAverageDataService.GetAllAirPressureAveragesDay()
+        {
+            return _stubs.GetMethodStub<GetAllAirPressureAveragesDay_Delegate>("GetAllAirPressureAveragesDay").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressureAverage> GetAllAirPressureAveragesDay_Delegate();
+
+        public StubIAirPressureAverageDataService GetAllAirPressureAveragesDay(GetAllAirPressureAveragesDay_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressureAverage> global::EntMob6UWPApp.Services.IAirPressureAverageDataService.GetAllAirPressureAveragesMonth()
+        {
+            return _stubs.GetMethodStub<GetAllAirPressureAveragesMonth_Delegate>("GetAllAirPressureAveragesMonth").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressureAverage> GetAllAirPressureAveragesMonth_Delegate();
+
+        public StubIAirPressureAverageDataService GetAllAirPressureAveragesMonth(GetAllAirPressureAveragesMonth_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+    }
+}
+
+namespace EntMob6UWPApp.Services
+{
+    [CompilerGenerated]
+    public class StubIAirPressureDataService : IAirPressureDataService
+    {
+        private readonly StubContainer<StubIAirPressureDataService> _stubs = new StubContainer<StubIAirPressureDataService>();
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressure> global::EntMob6UWPApp.Services.IAirPressureDataService.GetAllAirPressures()
+        {
+            return _stubs.GetMethodStub<GetAllAirPressures_Delegate>("GetAllAirPressures").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.AirPressure> GetAllAirPressures_Delegate();
+
+        public StubIAirPressureDataService GetAllAirPressures(GetAllAirPressures_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::EntMob6UWP.Domain.AirPressure global::EntMob6UWPApp.Services.IAirPressureDataService.GetLatestAirPressure()
+        {
+            return _stubs.GetMethodStub<GetLatestAirPressure_Delegate>("GetLatestAirPressure").Invoke();
+        }
+
+        public delegate global::EntMob6UWP.Domain.AirPressure GetLatestAirPressure_Delegate();
+
+        public StubIAirPressureDataService GetLatestAirPressure(GetLatestAirPressure_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+    }
+}
+
+namespace EntMob6UWPApp.Services
+{
+    [CompilerGenerated]
+    public class StubIBrightnessAverageDataService : IBrightnessAverageDataService
+    {
+        private readonly StubContainer<StubIBrightnessAverageDataService> _stubs = new StubContainer<StubIBrightnessAverageDataService>();
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.BrightnessAverage> global::EntMob6UWPApp.Services.IBrightnessAverageDataService.GetAllBrightnessAveragesMinute()
+        {
+            return _stubs.GetMethodStub<GetAllBrightnessAveragesMinute_Delegate>("GetAllBrightnessAveragesMinute").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.BrightnessAverage> GetAllBrightnessAveragesMinute_Delegate();
+
+        public StubIBrightnessAverageDataService GetAllBrightnessAveragesMinute(GetAllBrightnessAveragesMinute_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.BrightnessAverage> global::EntMob6UWPApp.Services.IBrightnessAverageDataService.GetAllBrightnessAveragesHour()
+        {
+            return _stubs.GetMethodStub<GetAllBrightnessAveragesHour_Delegate>("GetAllBrightnessAveragesHour").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.BrightnessAverage> GetAllBrightnessAveragesHour_Delegate();
+
+        public StubIBrightnessAverageDataService GetAllBrightnessAveragesHour(GetAllBrightnessAveragesHour_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.BrightnessAverage> global::EntMob6UWPApp.Services.IBrightnessAverageDataService.GetAllBrightnessAveragesDay()
+        {
+            return _stubs.GetMethodStub<GetAllBrightnessAveragesDay_Delegate>("GetAllBrightnessAveragesDay").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.BrightnessAverage> GetAllBrightnessAveragesDay_Delegate();
+
+        public StubIBrightnessAverageDataService GetAllBrightnessAveragesDay(GetAllBrightnessAveragesDay_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.BrightnessAverage> global::EntMob6UWPApp.Services.IBrightnessAverageDataService.GetAllBrightnessAveragesMonth()
+        {
+            return _stubs.GetMethodStub<GetAllBrightnessAveragesMonth_Delegate>("GetAllBrightnessAveragesMonth").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.BrightnessAverage> GetAllBrightnessAveragesMonth_Delegate();
+
+        public StubIBrightnessAverageDataService GetAllBrightnessAveragesMonth(GetAllBrightnessAveragesMonth_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+    }
+}
+
+namespace EntMob6UWPApp.Services
+{
+    [CompilerGenerated]
+    public class StubIBrightnessDataService : IBrightnessDataService
+    {
+        private readonly StubContainer<StubIBrightnessDataService> _stubs = new StubContainer<StubIBrightnessDataService>();
+
+        global::System.Collections.Generic.List<global::EntMob6UWP.Domain.Brightness> global::EntMob6UWPApp.Services.IBrightnessDataService.GetAllBrightnesses()
+        {
+            return _stubs.GetMethodStub<GetAllBrightnesses_Delegate>("GetAllBrightnesses").Invoke();
+        }
+
+        public delegate global::System.Collections.Generic.List<global::EntMob6UWP.Domain.Brightness> GetAllBrightnesses_Delegate();
+
+        public StubIBrightnessDataService GetAllBrightnesses(GetAllBrightnesses_Delegate del, int count = Times.Forever, bool overwrite = false)
+        {
+            _stubs.SetMethodStub(del, count, overwrite);
+            return this;
+        }
+
+        global::EntMob6UWP.Domain.Brightness global::EntMob6UWPApp.Services.IBrightnessDataService.GetLatestBrightness()
+        {
+            return _stubs.GetMethodStub<GetLatestBrightness_Delegate>("GetLatestBrightness").Invoke();
+        }
+
+        public delegate global::EntMob6UWP.Domain.Brightness GetLatestBrightness_Delegate();
+
+        public StubIBrightnessDataService GetLatestBrightness(GetLatestBrightness_Delegate del, int count = Times.Forever, bool overwrite = false)
         {
             _stubs.SetMethodStub(del, count, overwrite);
             return this;
