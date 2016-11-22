@@ -122,6 +122,10 @@
     <Compile Include="Services\IFrameNavigation.cs" />
     <Compile Include="Services\IHumidityAverageDataService.cs" />
     <Compile Include="Services\IHumidityDataService.cs" />
+    <Compile Include="Services\ITemperatureAverageDataService.cs" />
+    <Compile Include="Services\ITemperatureDataService.cs" />
+    <Compile Include="Services\TemperatureAverageDataService.cs" />
+    <Compile Include="Services\TemperatureDataService.cs" />
     <Compile Include="Utility\CustomCommand.cs" />
     <Compile Include="Utility\Messenger.cs" />
     <Compile Include="ViewModelLocator.cs" />
