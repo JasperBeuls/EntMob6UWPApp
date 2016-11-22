@@ -108,10 +108,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountRepository.cs" />
+    <Compile Include="AirPressureRepository.cs" />
     <Compile Include="BrightnessRepository.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="HumidityRepository.cs" />
     <Compile Include="IAccountRepository.cs" />
+    <Compile Include="IAirPressureRepository.cs" />
     <Compile Include="IBrightnessRepository.cs" />
     <Compile Include="IHumidityRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

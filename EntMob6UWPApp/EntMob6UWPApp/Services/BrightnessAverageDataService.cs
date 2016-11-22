@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EntMob6UWPApp.Services
 {
-    class BrightnessAverageDataService : IBrightnessAverageDataService
+    public class BrightnessAverageDataService : IBrightnessAverageDataService
     {
         IBrightnessRepository repository = new BrightnessRepository();
         public List<BrightnessAverage> GetAllBrightnessAveragesMinute()
