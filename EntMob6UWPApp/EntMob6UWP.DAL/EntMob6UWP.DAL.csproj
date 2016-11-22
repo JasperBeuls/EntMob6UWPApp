@@ -116,7 +116,9 @@
     <Compile Include="IAirPressureRepository.cs" />
     <Compile Include="IBrightnessRepository.cs" />
     <Compile Include="IHumidityRepository.cs" />
+    <Compile Include="ITemperatureRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TemperatureRepository.cs" />
     <EmbeddedResource Include="Properties\EntMob6UWP.DAL.rd.xml" />
   </ItemGroup>
   <ItemGroup>
